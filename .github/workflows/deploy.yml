@@ -1,6 +1,9 @@
 name: Build Quartz Site
 
 on:
+  push:
+    branches:
+      - v5
   workflow_dispatch:
   repository_dispatch:
     types: [llm-atlas-update]
