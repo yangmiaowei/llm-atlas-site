@@ -10,61 +10,61 @@
     <link>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>Backend</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/backend/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/backend/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
+  </item><item>
+    <title>Transformer</title>
+    <link>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/transformer/</link>
+    <guid>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/transformer/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>Architecture</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>LLM</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/llm/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/llm/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>Alignment</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/alignment/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/alignment/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>PostTraining</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>Training</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/llm/training/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/llm/training/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>Tag Index</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/tags/</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/tags/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:13:00 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:38 GMT</pubDate>
   </item><item>
     <title>Agent</title>
     <link>https://yangmiaowei.github.io/llm-atlas-site/agent</link>
     <guid>https://yangmiaowei.github.io/llm-atlas-site/agent</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:12:24 GMT</pubDate>
-  </item><item>
-    <title>Agent</title>
-    <link>https://yangmiaowei.github.io/llm-atlas-site/agent/</link>
-    <guid>https://yangmiaowei.github.io/llm-atlas-site/agent/</guid>
-    <description><![CDATA[ 🌺 Agent - 能力视角 [TOC] Memory（记忆） 系统怎么保存上下文。 包括： conversation history vector memory episodic memory long-term memory scratchpad Memory 在工程里被拆成三块： ① State Management（短期记忆） 当前对话 tool结果 scratchpad / working state agent loop state 👉 本质：运行时状态 ② Context Engineering（工作记忆 + 压缩） prompt assembly RAG summariza... ]]></description>
-    <pubDate>Wed, 14 Oct 2026 06:12:24 GMT</pubDate>
+    <pubDate>Wed, 14 Oct 2026 06:39:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
