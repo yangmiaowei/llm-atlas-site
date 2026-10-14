@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>type_2</title><meta charset="utf-8"/><link rel="preload" href="../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="type_2"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="type_2"/><meta name="twitter:description" content="类别二：高并发、流式响应与异步处理 1."/><meta property="og:description" content="类别二：高并发、流式响应与异步处理 1."/><meta property="og:image:alt" content="类别二：高并发、流式响应与异步处理 1."/><meta property="twitter:domain" content="yangmiaowei.github.io/llm-atlas-site"/><meta property="og:url" content="https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_2"/><meta property="twitter:url" content="https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_2"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="类别二：高并发、流式响应与异步处理 1."/><meta name="generator" content="Quartz"/><link href="../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_2-og-image.webp"/><meta property="og:image:url" content="https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_2-og-image.webp"/><meta name="twitter:image" content="https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_2-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="backend/ai_java/type_2" data-basepath="/llm-atlas-site"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../backend/">Backend</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../backend/ai_java/">ai_java</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>type_2</a></div></nav><h1 class="article-title">type_2</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-10T17:56:17.000Z">Oct 10, 2026</time><span>37 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="类别二高并发流式响应与异步处理">类别二：高并发、流式响应与异步处理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#类别二高并发流式响应与异步处理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-场景服务端sse代理的断线重连消息去重与网络抖动处理">1. 场景：服务端SSE代理的断线重连、消息去重与网络抖动处理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-场景服务端sse代理的断线重连消息去重与网络抖动处理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路：</strong> 后端作为客户端（前端）与上游AI服务之间的代理，需实现一个健壮的、有状态的连接管理器，负责维护与AI服务的长连接，并处理下游客户端的重连。</p>
+<ol>
+<li>
+<p><strong>会话与连接管理：</strong></p>
+<ul>
+<li>为每个前端SSE连接创建一个 <code>SSESession</code>，为其分配唯一 <code>sessionId</code>。该会话内部维护与上游AI服务的HTTP客户端连接（如使用 <code>WebClient</code> 或异步 <code>HttpClient</code>）。</li>
+<li>将会话及对应的 <code>lastEventId</code> 等状态存储于分布式缓存（如Redis），键为 <code>sessionId</code>，并设置合理的TTL。</li>
+</ul>
+</li>
+<li>
+<p><strong>处理前端断线重连：</strong></p>
+<ul>
+<li>前端重连时，携带之前连接中断时收到的最后一个事件的ID（<code>Last-Event-ID</code> 头）。</li>
+<li>后端根据 <code>sessionId</code> 从缓存中恢复会话状态。<strong>关键操作：</strong> 后端需基于恢复的 <code>lastEventId</code>，重新向上游AI服务建立连接，并在请求头中设置 <code>Last-Event-ID</code>，以实现从断点续传。这要求上游AI服务支持此标准。</li>
+</ul>
+</li>
+<li>
+<p><strong>消息去重：</strong></p>
+<ul>
+<li><strong>目的：</strong> 防止因网络抖动或客户端重连导致下游收到重复消息。</li>
+<li><strong>实现：</strong> 后端在转发从AI服务收到的SSE事件时，为每个事件附加一个内部单调递增的序列号（如 <code>localSeq</code>），并与会话状态一起缓存。当前端重连时，后端在转发新事件前，会比较前端传来的 <code>Last-Event-ID</code> 与本地缓存的序列号，只转发序列号更大的事件。</li>
+</ul>
+</li>
+<li>
+<p><strong>应对网络抖动：</strong></p>
+<ul>
+<li>在代理层设置合理的<strong>读超时</strong>和<strong>响应超时</strong>，避免因上游AI服务响应缓慢而长时间占用后端线程。</li>
+<li><strong>实现背压（Backpressure）：</strong> 当下游客户端处理缓慢（表现为TCP缓冲区满）时，后端应能感知并暂停从上游读取数据，或缓冲少量数据后断开上游连接，避免内存溢出。Spring WebFlux的 <code>Flux</code> 能天然支持背压。</li>
+</ul>
+</li>
+<li>
+<p><strong>关键考量：</strong> 此设计的核心是<strong>会话状态外部化</strong>，使服务端具备无状态扩容能力，同时通过代理层实现了上游协议与下游客户端的解耦和增强。</p>
+</li>
+</ol>
+<h2 id="2-场景服务端的流式markdown分片与转发">2. 场景：服务端的流式Markdown分片与转发<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-场景服务端的流式markdown分片与转发" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路：</strong> 后端不负责渲染，但负责将AI的流式输出智能地切割为完整的Markdown片段，以结构化的形式（如JSON）分块发送给前端，便于其安全渲染。</p>
+<ol>
+<li>
+<p><strong>流式分词与边界检测：</strong></p>
+<ul>
+<li>后端在消费上游AI服务的字符流时，实时进行Markdown语法解析，识别块级元素的边界，如代码块（```）、标题（#）、列表、表格等。</li>
+<li>使用一个状态机或轻量级解析库（如 <code>commonmark-java</code> 的流式解析器），在内存中累积字符，直到检测到一个<strong>完整的Markdown块</strong>形成。</li>
+</ul>
+</li>
+<li>
+<p><strong>结构化分片转发：</strong></p>
+<ul>
+<li>
+<p>一旦检测到完整块（例如，一个完整的代码块，包含开始标记、内容和结束标记），立即将其封装为一个JSON对象，例如：</p>
+<pre><code>{
+	&quot;type&quot;: &quot;code_block&quot;,
+	&quot;language&quot;: &quot;java&quot;,
+	&quot;content&quot;: &quot;public class Main {...}&quot;,
+	&quot;complete&quot;: true
+}
+</code></pre>
+</li>
+<li>
+<p>通过SSE或WebSocket将整个JSON对象作为一个消息发送给前端。对于段落文本，可以按句子或自然段进行分片。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>3. 优势：</strong></p>
+<ul>
+<li><strong>避免标签截断：</strong> 因每次发送的都是语法完整的片段，前端可直接将其转换为DOM，无需担心破损的HTML标签。</li>
+<li><strong>提升前端体验：</strong> 前端可按”块”为单位进行渲染，可以实现更流畅的逐块出现效果，而非逐字抖动。</li>
+<li><strong>富结构化：</strong> 附带元数据（如代码语言），使前端能进行精准高亮。</li>
+</ul>
+<h2 id="3-场景服务端对多独立片段流式响应的chunk合并算法">3. 场景：服务端对多独立片段流式响应的Chunk合并算法<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-场景服务端对多独立片段流式响应的chunk合并算法" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：在后端设计一个缓冲区与状态机，负责将上游可能零碎到达的、属于不同逻辑片段的数据进行暂存、排序和合并，确保向下游转发时每个数据包的完整性。</p>
+<ol>
+<li><strong>协议定义与识别</strong>：与上游AI服务约定，或在接收流时识别片段边界。例如，每个数据块可包含 <code>fragment_id</code> 和 <code>sequence</code> 字段。或者，通过内容特征识别（如特定分隔符）。</li>
+<li><strong>内存合并缓冲区</strong>：
+<ul>
+<li>维护一个 <code>Map&lt;String, FragmentBuffer></code>。键为 <code>fragment_id</code>，值为一个缓冲区对象，包含 <code>StringBuilder content</code> 和 <code>int expectedSequences</code>。</li>
+<li>收到一个Chunk后，根据其 <code>fragment_id</code> 找到对应缓冲区，将内容按 <code>sequence</code> 顺序插入或追加。</li>
+</ul>
+</li>
+<li><strong>完整性判断与转发</strong>：
+<ul>
+<li>当收到某个片段的 <code>is_final</code> 标识块，或缓冲区已按序收齐该片段的所有序列块时，认为该片段完整。</li>
+<li>将缓冲区内的完整内容取出，作为一个逻辑单元（可包装为 <code>{&quot;type&quot;: &quot;fragment&quot;, &quot;id&quot;: &quot;x&quot;, &quot;data&quot;: &quot;完整内容&quot;}</code>）转发给下游客户端。</li>
+</ul>
+</li>
+<li><strong>超时与清理</strong>：为每个 <code>fragment_id</code> 设置计时器。如果长时间未收到后续块，应清理该缓冲区，并可选择向上游重试或向下游发送错误通知，防止内存泄漏。</li>
+</ol>
+<h2 id="4-场景服务端支持优先级调度的流式请求队列">4. 场景：服务端支持“优先级调度”的流式请求队列<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-场景服务端支持优先级调度的流式请求队列" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：在后端实现一个任务队列，将用户请求封装为任务，根据优先级进行调度执行，并支持高优先级任务抢占低优先级任务的资源。</p>
+<ol>
+<li><strong>任务抽象与队列</strong>：
+<ul>
+<li>定义 <code>StreamingJob</code> 类，包含请求参数、优先级、创建时间、所属用户/会话、以及一个 <code>Future</code> 或 <code>Cancellable</code> 句柄。</li>
+<li>使用 <code>PriorityBlockingQueue</code> 存放待执行的 <code>StreamingJob</code>，排序规则基于优先级和创建时间。</li>
+</ul>
+</li>
+<li><strong>线程池与任务执行</strong>：
+<ul>
+<li>使用一个固定大小的线程池执行任务。工作线程从优先级队列中获取任务。</li>
+<li>每个任务执行时，首先与上游AI服务建立连接，并开始转发数据。同时，将控制该连接的 <code>Cancellable</code> 对象（如 <code>WebClient</code> 的 <code>Disposable</code>）保存到 <code>StreamingJob</code> 中。</li>
+</ul>
+</li>
+<li><strong>抢占式调度</strong>：
+<ul>
+<li>当一个新的高优先级任务到达时，调度器检查正在运行的任务。</li>
+<li>如果存在正在运行的、优先级更低的任务，调度器调用其 <code>Cancellable.cancel()</code> 方法，中断其与上游AI服务的连接。将被中断的任务（标记为 <code>INTERRUPTED</code>）重新放回队列或放入等待队列，稍后重试。</li>
+<li>随后立即开始执行高优先级任务。</li>
+</ul>
+</li>
+<li><strong>状态持久化与恢复</strong>：对于被抢占的任务，可将其当前进度（如已生成的文本）保存起来，以便重试时能从断点开始，或至少能向用户反馈部分结果。</li>
+</ol>
+<h2 id="5-场景在spring-webflux中优化ai流式响应的处理与资源隔离">5. 场景：在Spring WebFlux中优化AI流式响应的处理与资源隔离<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-场景在spring-webflux中优化ai流式响应的处理与资源隔离" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：利用响应式编程模型和非阻塞IO，避免线程阻塞，并通过隔离的调度器处理不同类型的工作负载。</p>
+<ol>
+<li><strong>全链路非阻塞</strong>：
+<ul>
+<li>使用 <code>WebClient</code>（而非阻塞式的 <code>RestTemplate</code>）调用上游AI服务的流式接口，返回 <code>Flux&lt;DataBuffer></code>。</li>
+<li>Controller直接返回 <code>Flux&lt;ServerSentEvent></code> 或 <code>application/stream+json</code>。Spring WebFlux会负责将响应式流写回网络，整个过程不占用额外线程，并发能力极强。</li>
+</ul>
+</li>
+<li><strong>隔离与调度器</strong>：
+<ul>
+<li><strong>计算密集型处理</strong>：如果需要对流式数据做复杂转换（如实时翻译、敏感词过滤），应使用 <code>publishOn(Schedulers.boundedElastic())</code> 将工作调度到专门的弹性线程池，避免阻塞用于IO的Event Loop线程。</li>
+<li><strong>阻塞调用隔离</strong>：如果必须集成一个阻塞的AI客户端SDK，使用 <code>Mono.fromCallable(() -> blockingCall()).subscribeOn(Schedulers.boundedElastic())</code> 将其调用隔离到弹性线程池，再将其结果转换为 <code>Flux</code>。</li>
+</ul>
+</li>
+<li><strong>背压传导</strong>：确保从 <code>WebClient</code> 到Controller返回的 <code>Flux</code>，背压信号能正确地从下游客户端传导至上游AI服务，防止数据积压。<code>WebClient</code> 的 <code>retrieve().bodyToFlux()</code> 默认支持背压。</li>
+<li><strong>关键优势</strong>：此模式能用少量线程支撑极高并发（数千甚至上万）的流式连接，系统资源利用率高，且通过调度器实现了天然的隔离。</li>
+</ol>
+<h2 id="6-场景服务端的流式数据缓存与断点续传支持">6. 场景：服务端的流式数据缓存与断点续传支持<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-场景服务端的流式数据缓存与断点续传支持" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：在后端缓存已生成的流式数据，并为每个会话维护一个写入指针，以支持离线续写和历史回放查询。</p>
+<ol>
+<li><strong>缓存设计</strong>：
+<ul>
+<li>使用Redis的 <code>List</code> 或 <code>Stream</code> 数据结构为每个 <code>sessionId</code> 缓存流式事件。每个事件包含序列号、内容、时间戳。</li>
+<li>也可以使用本地缓存（如Caffeine）加速最新数据的读取，但Redis保证了分布式下的访问一致性。</li>
+</ul>
+</li>
+<li><strong>写入与指针</strong>：
+<ul>
+<li>在从上游AI服务接收并向下游转发数据的同时，将每个事件异步追加到对应 <code>sessionId</code> 的Redis <code>List</code> 中。</li>
+<li>在Redis中存储一个指针（<code>String</code> 类型），键如 <code>session:{id}:offset</code>，值始终指向最新写入事件的序列号。</li>
+</ul>
+</li>
+<li><strong>断点续传</strong>：
+<ul>
+<li>客户端重连携带 <code>Last-Event-ID</code>（即序列号N）。</li>
+<li>后端根据 <code>sessionId</code> 从Redis <code>List</code> 中获取所有序列号大于N的事件，先发送给客户端，以”追赶上”进度。</li>
+<li>之后，再切换到实时转发模式，并继续缓存新事件。</li>
+</ul>
+</li>
+<li><strong>历史回放</strong>：提供单独的REST接口，如 <code>GET /sessions/{id}/events?from=0&amp;to=100</code>，从Redis <code>List</code> 中分页查询历史事件，实现完整的回放功能。</li>
+<li><strong>清理策略</strong>：设置会话过期时间，或当会话明确结束后，启动后台任务删除对应的Redis数据。</li>
+</ol>
+<h2 id="7-场景利用java并发工具并行处理多个ai流式响应">7. 场景：利用Java并发工具并行处理多个AI流式响应<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-场景利用java并发工具并行处理多个ai流式响应" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：使用 <code>CompletableFuture</code> 或 <code>Project Loom</code> 的虚拟线程，为每个独立的AI流式调用创建并发任务，并在主线程中协调结果的聚合与同步。</p>
+<ol>
+<li><strong>并行调用</strong>：
+<ul>
+<li>为每个需要并行的AI请求创建一个 <code>CompletableFuture&lt;Flux&lt;String>></code>。在每个Future中，使用 <code>WebClient</code> 发起非阻塞的流式调用，并将得到的 <code>Flux</code> 收集到一个 <code>List</code> 中（或直接开始消费）。</li>
+<li>使用 <code>CompletableFuture.allOf(future1, future2).join()</code> 等待所有流式连接就绪。</li>
+</ul>
+</li>
+<li><strong>流式聚合</strong>：
+<ul>
+<li>更高级的模式是使用反应式组合运算符。例如，使用 <code>Flux.merge(future1.join(), future2.join())</code> 将多个 <code>Flux</code> 合并为一个，但会丢失来源信息。</li>
+<li>若需区分来源，可使用 <code>Flux.zip(f1, f2)</code> 将多个流的最新元素配对，或为每个流的事件打上标签后再合并。</li>
+</ul>
+</li>
+<li><strong>状态同步与回调</strong>：
+<ul>
+<li>每个并行任务（<code>CompletableFuture</code>）在运行时，可以通过线程安全的容器（如 <code>ConcurrentHashMap</code>）或原子类更新共享进度状态。</li>
+<li>主线程可以定时轮询此状态，或由每个任务在关键节点（如每收到10个Chunk）时发布事件，来聚合生成整体进度。</li>
+</ul>
+</li>
+<li><strong>资源控制</strong>：使用 <code>Semaphore</code> 或固定大小的线程池来限制并行调用的最大数量，防止对上游AI服务造成洪水攻击。</li>
+</ol>
+<h2 id="8-场景解析ai服务端返回的流式数据中的自定义事件">8. 场景：解析AI服务端返回的流式数据中的自定义事件<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-场景解析ai服务端返回的流式数据中的自定义事件" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：在HTTP客户端层或流式数据处理链中插入一个事件解复用器，将控制事件与数据事件分离，并路由到不同的处理器。</p>
+<ol>
+<li>
+<p><strong>事件识别</strong>：</p>
+<ul>
+<li>在读取SSE响应行时，不仅解析 <code>data:</code>，也解析 <code>event:</code> 字段。如果 <code>event:</code> 字段值为 <code>DONE</code> 或 <code>ERROR</code>，则将其识别为控制事件。</li>
+<li>如果数据格式是自定义的（如 <code>[DONE]</code>），则需要在解析 <code>data:</code> 内容时进行字符串匹配。</li>
+</ul>
+</li>
+<li>
+<p><strong>构建处理管道</strong>：</p>
+<ul>
+<li>
+<p>使用响应式编程模型，将原始的 <code>Flux&lt;ServerSentEvent></code> 通过 <code>handle</code> 或 <code>filter</code> 操作符进行分流。</p>
+<pre><code>Flux&lt;DataEvent> dataFlux = sseFlux
+        .filter(sse -> &quot;message&quot;.equals(sse.event())) // 过滤出数据事件
+        .map(sse -> new DataEvent(sse.id(), sse.data()));
+Flux&lt;ControlEvent> controlFlux = sseFlux
+        .filter(sse -> &quot;done&quot;.equals(sse.event()) || &quot;error&quot;.equals(sse.event()))
+        .map(sse -> new ControlEvent(sse.event(), sse.data()));
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>触发回调</strong>：</p>
+<ul>
+<li>订阅 <code>controlFlux</code>，并在收到事件时，调用预先注册的回调处理器。这些处理器可以执行清理资源、更新数据库状态、发送WebHook通知等操作。</li>
+<li>订阅 <code>dataFlux</code>，进行常规的数据处理与转发。</li>
+</ul>
+</li>
+<li>
+<p><strong>确保可靠性</strong>：控制事件的处理逻辑必须幂等，因为网络重试可能导致事件重复接收。</p>
+</li>
+</ol>
+<h2 id="9-场景服务端实现流式进度估算并推送给客户端">9. 场景：服务端实现“流式进度估算”并推送给客户端<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-场景服务端实现流式进度估算并推送给客户端" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：服务端作为中间层，有能力收集更精确的元数据，从而进行更可靠的进度估算，并通过SSE或WebSocket主动推送。</p>
+<ol>
+<li><strong>多维度数据收集</strong>：
+<ul>
+<li><strong>从上游</strong>：尝试从AI服务的响应头或首个Chunk中获取 <code>total_tokens</code> 预估。</li>
+<li><strong>在代理层</strong>：准确统计已接收的 <code>tokens_received</code>（从内容解析或从上游元数据获得）和已消耗的时间 <code>time_elapsed</code>。</li>
+</ul>
+</li>
+<li><strong>动态估算模型</strong>：
+<ul>
+<li>如果获取到 <code>total_tokens</code>，则进度 = <code>tokens_received / total_tokens</code>。</li>
+<li>如果未获取到，可采用移动平均预测：根据近期（如过去10秒）的平均Token生成速率，预测剩余时间。也可结合历史同类型任务的数据进行贝叶斯修正。</li>
+</ul>
+</li>
+<li><strong>进度推送</strong>：
+<ul>
+<li>单独开辟一个轻量级的SSE事件流（<code>event: progress</code>），或在与数据相同的SSE连接中穿插发送进度事件。</li>
+<li>定期（如每秒）或在进度有显著变化（如增加5%）时，将估算结果（<code>{&quot;progress&quot;: 0.65, &quot;eta_seconds&quot;: 30}</code>）发送给客户端。</li>
+</ul>
+</li>
+<li><strong>处理不确定性</strong>：当无法获取总量时，进度条可设计为”不确定模式”（indeterminate），或显示已处理的Token数和当前速率。</li>
+</ol>
+<h2 id="10-场景协调ai流式输出与语音合成tts的服务端同步">10. 场景：协调AI流式输出与语音合成(TTS)的服务端同步<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-场景协调ai流式输出与语音合成tts的服务端同步" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：服务端作为协调者，管理文本流和语音流两个独立的异步过程，并确保它们的同步状态。</p>
+<ol>
+<li><strong>管道设计</strong>：
+<ul>
+<li><strong>文本流</strong>：接收AI的文本流，并进行句子切分（Sentence Segmentation）。</li>
+<li><strong>TTS任务队列</strong>：将切分出的完整句子，封装为TTS任务，提交给一个异步任务队列（如通过 <code>@Async</code>、线程池或消息队列）。</li>
+</ul>
+</li>
+<li><strong>同步状态管理</strong>：
+<ul>
+<li>为每个会话维护一个”当前朗读句索引”和”TTS任务完成状态”的映射。</li>
+<li>TTS服务（可能是另一个微服务）处理完一个句子的语音合成后，回调通知后端，或后端轮询TTS服务状态。</li>
+</ul>
+</li>
+<li><strong>客户端协调</strong>：
+<ul>
+<li>后端通过两条下行通道与客户端通信：
+<ul>
+<li>i. <strong>文本流SSE</strong>：推送被切分后的文本句子。</li>
+<li>ii. <strong>控制信令WebSocket/SSE</strong>：推送语音同步信令，如 <code>{&quot;type&quot;: &quot;tts_start&quot;, &quot;sentence_index&quot;: 1}</code> 和 <code>{&quot;type&quot;: &quot;tts_end&quot;, &quot;sentence_index&quot;: 1}</code>。</li>
+</ul>
+</li>
+<li>客户端根据信令，高亮当前正在朗读的文本句子。</li>
+</ul>
+</li>
+<li><strong>处理用户交互</strong>：当用户点击”暂停”时，后端暂停向TTS任务队列提交新句子，并通知TTS服务暂停当前合成。当用户”跳过”时，后端取消当前及后续已提交的TTS任务，并清理相关状态，然后从新的句子开始提交。</li>
+<li><strong>复杂度</strong>：此方案涉及多个异步服务的协调，状态管理复杂，通常需要一个状态机（如Spring State Machine）来清晰地管理会话的整体状态（<code>PLAYING</code>，<code>PAUSED</code>，<code>SKIPPING</code>）。</li>
+</ol>
+<h2 id="11-场景从数据库分页读取海量数据分批流式发送给ai处理">11. 场景：从数据库分页读取海量数据，分批流式发送给AI处理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-场景从数据库分页读取海量数据分批流式发送给ai处理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：采用基于游标的惰性读取与生产者-消费者模型，实现可控制、可观察的批处理管道，避免一次性加载导致内存溢出。</p>
+<ol>
+<li><strong>游标与分页策略</strong>：
+<ul>
+<li>避免使用传统的 <code>OFFSET-LIMIT</code> 分页，在数据量极大时深度分页性能极差。应使用基于游标的分页，即查询条件中附带 <code>id > lastId ORDER BY id LIMIT batchSize</code>。这需要表有一个单调递增的主键或索引列。</li>
+<li>使用Spring Data JPA的 <code>Streamable</code> 或MyBatis的 <code>Cursor</code> 接口进行数据库游标读取，实现逐批从数据库拉取数据，而非一次性加载到内存。</li>
+</ul>
+</li>
+<li><strong>可控的并行处理管道</strong>：
+<ul>
+<li>设计一个 <code>BatchProcessor</code>，它包含一个生产者线程（负责从游标读取数据并分块）和一个由线程池管理的消费者组。</li>
+<li>生产者将每批数据（如1000条记录）封装为一个 <code>ProcessTask</code>，提交到一个有界阻塞队列（<code>BlockingQueue</code>）中。</li>
+<li>消费者线程从队列中获取任务，调用AI服务进行批处理，并更新处理进度（如写入Redis）。</li>
+</ul>
+</li>
+<li><strong>进度管理与容错</strong>：
+<ul>
+<li>在Redis中使用 <code>Hash</code> 结构记录当前任务的总批次数、已处理批次数、最后处理的游标位置。</li>
+<li>每个 <code>ProcessTask</code> 处理成功后，原子性地更新进度。若处理失败，可将该任务重新放入队列重试（需注意幂等性），或移入死信队列人工介入。</li>
+</ul>
+</li>
+<li><strong>背压与资源保护</strong>：有界队列的大小和消费者线程池的大小共同构成了系统的处理能力上限。当队列满时，生产者线程会被阻塞，从而自然形成背压，防止任务积压过快导致内存溢出。</li>
+</ol>
+<h2 id="12-场景异步处理翻译整本电子书的长时可分解任务">12. 场景：异步处理“翻译整本电子书”的长时、可分解任务<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-场景异步处理翻译整本电子书的长时可分解任务" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：将宏观任务分解为独立的原子子任务，利用工作队列进行并行调度，并通过工作流引擎或状态机管理总体进度与子任务依赖。</p>
+<ol>
+<li><strong>任务分解与定义</strong>：
+<ul>
+<li>接收任务后，首先将电子书按章节或固定大小进行切分，生成N个独立的 <code>TranslationSubTask</code>，每个子任务包含原文片段、目标语言等上下文。</li>
+<li>在数据库中创建主任务记录（<code>BookTranslationJob</code>）和所有子任务记录，状态均为 <code>PENDING</code>。</li>
+</ul>
+</li>
+<li><strong>并行调度与执行</strong>：
+<ul>
+<li>将所有子任务发布到分布式消息队列（如Kafka、RabbitMQ）或提交到 <code>ExecutorService</code>。</li>
+<li>多个消费者（或工作线程）并行处理子任务：调用AI翻译API，将结果保存至数据库或对象存储，并将子任务状态更新为 <code>SUCCESS</code>。</li>
+</ul>
+</li>
+<li><strong>进度汇总与最终合并</strong>：
+<ul>
+<li>每次子任务状态更新时，触发一个”完成检查”。可以通过数据库查询 <code>COUNT</code> 已完成子任务，或更高效地，在Redis中使用 <code>INCR</code> 命令累计成功数。</li>
+<li>当所有子任务成功，触发一个”合并阶段”任务，将所有子任务的译文按顺序拼接，生成最终的电子书文件，并更新主任务状态为 <code>COMPLETED</code>。</li>
+</ul>
+</li>
+<li><strong>处理部分失败</strong>：
+<ul>
+<li>为子任务设置重试机制和失败上限。超过重试次数后，标记为 <code>FAILED</code>。</li>
+<li>主任务状态可变为 <code>PARTIALLY_FAILED</code>，并记录失败的具体章节，允许人工干预或重新提交特定失败子任务。</li>
+</ul>
+</li>
+</ol>
+<h2 id="13-场景针对ai服务的分布式平滑限流">13. 场景：针对AI服务的分布式平滑限流<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-场景针对ai服务的分布式平滑限流" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：利用Redis的原子操作和高性能特性，实现一个集群共享的、精确的令牌桶或漏桶算法。</p>
+<ol>
+<li><strong>算法选择（令牌桶）</strong>：实现一个分布式令牌桶。核心参数：<code>capacity</code>（桶容量）、<code>refillRate</code>（每秒补充的令牌数）。</li>
+<li><strong>Redis Lua脚本实现</strong>：为保证原子性，使用Lua脚本在Redis端一次性完成计算。脚本逻辑通常包含：
+<ul>
+<li>使用 <code>TIME</code> 命令获取当前时间戳。</li>
+<li>根据 <code>lastRefillTime</code> 和 <code>refillRate</code> 计算应补充的新令牌数，更新当前令牌数（不超过 <code>capacity</code>）。</li>
+<li>如果当前令牌数 >= 1，则减1，返回 <code>true</code>（允许通过），并更新 <code>lastRefillTime</code>。</li>
+<li>否则，返回 <code>false</code>（拒绝通过）。</li>
+</ul>
+</li>
+<li><strong>Java客户端集成</strong>：
+<ul>
+<li>在Spring应用中，通过 <code>RedisTemplate.execute(RedisScript)</code> 调用上述Lua脚本。</li>
+<li>在网关（如Spring Cloud Gateway）的过滤器或业务服务的切面中，对需要限流的AI服务调用前执行此脚本。</li>
+</ul>
+</li>
+<li><strong>维度扩展</strong>：限流键（Key）可设计为 <code>rate_limit:{apiEndpoint}:{tenantId}</code>，从而实现对不同API、不同租户的差异化限流。通过配置中心动态管理 <code>capacity</code> 和 <code>refillRate</code> 参数。</li>
+</ol>
+<h2 id="14-场景在webflux中将流式fluxstring聚合为monocompleteresponse">14. 场景：在WebFlux中将流式<code>Flux&lt;String></code>聚合为<code>Mono&lt;CompleteResponse></code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-场景在webflux中将流式fluxstring聚合为monocompleteresponse" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：利用Reactor操作符对流进行收集、超时控制和异常处理，实现同步与异步调用模式的统一。</p>
+<ol>
+<li><strong>响应聚合</strong>：
+<ul>
+<li>使用 <code>Flux.collectList()</code> 操作符，可以将流中的所有元素（数据块）收集到一个 <code>List&lt;String></code> 中。</li>
+<li>然后使用 <code>map</code> 操作符，将这个列表合并成一个完整的字符串，并构造为 <code>CompleteResponse</code> 对象。最终返回类型为 <code>Mono&lt;CompleteResponse></code>。</li>
+</ul>
+</li>
+<li><strong>超时控制</strong>：
+<ul>
+<li>在流上使用 <code>timeout(Duration)</code> 操作符，为整个流式响应过程设置总超时。超时会发出 <code>TimeoutException</code>。</li>
+<li>可以使用 <code>onErrorResume</code> 捕获超时异常，返回一个部分结果或错误响应的 <code>Mono</code>。</li>
+</ul>
+</li>
+<li><strong>背压与缓冲区策略</strong>：
+<ul>
+<li>当聚合完整响应时，需注意背压。如果生产速度远快于消费（收集）速度，可能导致内存压力。</li>
+<li>可使用 <code>Flux.bufferTimeout(int maxSize, Duration maxTime)</code> 进行缓冲，每收集到一定数量或经过一定时间，就将缓冲区的数据向下游推送一次，在聚合场景下，这通常意味着最后合并一次。</li>
+</ul>
+</li>
+<li><strong>统一接口设计</strong>：可以设计一个服务方法，同时支持流式和非流式返回。通过一个布尔参数（如 <code>stream: boolean</code>）控制。若 <code>stream</code> 为 <code>true</code>，直接返回 <code>Flux&lt;String></code>；若为 <code>false</code>，则调用上述聚合逻辑返回 <code>Mono&lt;CompleteResponse></code>。</li>
+</ol>
+<h2 id="15-场景实现用户中断ai生成请求的信号传递">15. 场景：实现用户中断AI生成请求的信号传递<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-场景实现用户中断ai生成请求的信号传递" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：建立”请求-中断”信令通道，并在服务端实现优雅的资源清理链。</p>
+<ol>
+<li><strong>中断信令接收</strong>：为用户会话提供另一个端点，如 <code>POST /generations/{taskId}/cancel</code>。前端在用户点击停止时调用此端点。</li>
+<li><strong>任务管理与中断触发</strong>：
+<ul>
+<li>服务端维护一个 <code>ConcurrentHashMap&lt;String, CancellableTask></code>，键为 <code>taskId</code>，值为一个包含 <code>WebClient.RequestHeadersUriSpec</code> 或其他可取消句柄的任务对象。</li>
+<li>创建AI生成任务时，将 <code>taskId</code> 和对应的 <code>CancellableTask</code> 存入此Map。</li>
+<li>当收到中断请求时，从Map中获取对应的 <code>CancellableTask</code>，调用其 <code>cancel()</code> 或 <code>dispose()</code> 方法。这将断开与上游AI服务的HTTP连接，停止数据拉取。</li>
+</ul>
+</li>
+<li><strong>清理与状态同步</strong>：
+<ul>
+<li>中断后，向上游AI服务的中断也可能需要调用特定API（如果支持）。</li>
+<li>清理服务端为该任务分配的资源（如缓冲区、内部状态），并将任务最终状态更新为 <code>CANCELLED</code>。</li>
+<li>向客户端（前端）发送一个明确的任务终止事件（可通过原SSE连接发送 <code>[DONE]</code>，或通过WebSocket），并附中中断原因。</li>
+</ul>
+</li>
+<li><strong>处理已生成部分</strong>：在清理前，可以选择将已生成的部分内容保存下来，关联到该任务，允许用户查看”未完成的草稿”。</li>
+</ol>
+<h2 id="16-场景基于消息触发并行调用多个ai服务并聚合结果">16. 场景：基于消息触发，并行调用多个AI服务并聚合结果<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#16-场景基于消息触发并行调用多个ai服务并聚合结果" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>核心思路：利用 <code>CompletableFuture</code> 或反应式编程实现并行调用，并利用回调或 <code>CompletableFuture.allOf()</code> 进行结果聚合。</p>
+<ol>
+<li><strong>消息监听与任务触发</strong>：使用 <code>@KafkaListener</code> 或 <code>@RabbitListener</code> 监听消息队列。当收到图片处理消息时，触发处理流程。</li>
+<li><strong>并行调用封装</strong>：
+<ul>
+<li>将”描述图片”和”审核图片”两个AI调用分别封装为返回 <code>CompletableFuture&lt;DescriptionResult></code> 和 <code>CompletableFuture&lt;AuditResult></code> 的方法。</li>
+<li>在方法内部，使用 <code>@Async</code> 注解（需配合 <code>@EnableAsync</code>）或手动提交到线程池，执行具体的HTTP请求。</li>
+</ul>
+</li>
+<li><strong>结果聚合</strong>：</li>
+</ol>
+<pre><code>CompletableFuture&lt;DescriptionResult> future1 = imageDescriptionService.describeAsync(imageUrl);
+CompletableFuture&lt;AuditResult> future2 = imageAuditService.auditAsync(imageUrl);
+CompletableFuture.allOf(future1, future2)
+        .thenAccept(void -> {
+            DescriptionResult desc = future1.join(); // 此时已经完成，不会阻塞
+            AuditResult audit = future2.join();
+            CombinedResult result = combine(desc, audit);
+            // 将聚合结果发送到响应队列
+            responseSender.send(result);
+        }).exceptionally(ex -> {
+            // 处理任一任务失败的情况
+            return null;
+        });
+</code></pre>
+<ol start="4">
+<li><strong>超时与熔断</strong>：为每个 <code>CompletableFuture</code> 配置 <code>orTimeout</code>，并为每个AI服务调用配置熔断器（如Resilience4j），避免单个服务故障导致整体流程长时间挂起。</li>
+</ol>
+<h2 id="17-场景对低优先级ai任务实现基于优先级的延迟调度">17. 场景：对低优先级AI任务实现基于优先级的延迟调度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#17-场景对低优先级ai任务实现基于优先级的延迟调度" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：实现一个支持优先级的延迟队列，并结合定时任务或调度线程池执行。</p>
+<ol>
+<li><strong>任务与队列定义</strong>：
+<ul>
+<li>定义 <code>DelayedTask</code> 实现 <code>Delayed</code> 接口，包含 <code>Runnable</code> 任务、<code>priority</code>、<code>executeTime</code>（执行时间戳）。</li>
+<li>使用 <code>PriorityBlockingQueue&lt;DelayedTask></code> 作为延迟队列。排序规则：先按 <code>executeTime</code>（越早到期越靠前），<code>executeTime</code> 相同时按 <code>priority</code>（优先级越高越靠前）。</li>
+</ul>
+</li>
+<li><strong>调度器核心</strong>：
+<ul>
+<li>创建一个 <code>PriorityTaskScheduler</code>，内部包含一个 <code>Thread</code>，其 <code>run</code> 方法循环从队列中取任务（<code>queue.take()</code> 会阻塞直到有任务到期）。</li>
+<li>取到到期任务后，将其提交到一个通用的工作线程池执行。</li>
+</ul>
+</li>
+<li><strong>任务提交</strong>：
+<ul>
+<li>高优先级任务：<code>executeTime</code> 设置为 <code>now</code>，直接放入队列，会很快被执行。</li>
+<li>低优先级任务：<code>executeTime</code> 设置为 <code>now + delay</code>（如5分钟后），放入队列，实现延迟处理。</li>
+</ul>
+</li>
+<li><strong>资源感知与动态调整</strong>：调度器可以监控系统负载（如CPU、活跃线程数）。当系统负载高时，动态增加低优先级任务的 <code>delay</code> 时间，实现自适应降级。</li>
+</ol>
+<h2 id="18-场景解析ai流式响应中的自定义控制事件">18. 场景：解析AI流式响应中的自定义控制事件<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#18-场景解析ai流式响应中的自定义控制事件" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：在流式处理管道中，对Server-Sent Event进行解复用，将控制事件与数据事件分离，并派发到不同的事件处理器。</p>
+<ol>
+<li><strong>SSE事件解析</strong>：使用Spring的 <code>org.springframework.http.codec.ServerSentEvent</code> 对象来解析原始的SSE流。它会自动处理 <code>event</code>，<code>data</code>，<code>id</code>，<code>retry</code> 等字段。</li>
+<li><strong>构建处理管道</strong>：</li>
+</ol>
+<pre><code>Flux&lt;ServerSentEvent&lt;String>> sseFlux = webClient.get()
+        .uri(&quot;/ai-stream&quot;)
+        .retrieve()
+        .bodyToFlux(ServerSentEvent.class);
+// 分离数据流
+Flux&lt;String> dataStream = sseFlux
+        .filter(sse -> sse.event() == null || &quot;message&quot;.equals(sse.event())) // 默认或无事件类型的数据
+        .map(ServerSentEvent::data);
+// 分离控制流
+Flux&lt;ControlEvent> controlStream = sseFlux
+        .filter(sse -> &quot;done&quot;.equals(sse.event()) || &quot;error&quot;.equals(sse.event()))
+        .map(sse -> new ControlEvent(sse.event(), sse.data())));
+</code></pre>
+<ol start="3">
+<li>
+<p><strong>事件派发</strong>：</p>
+<ul>
+<li>分别订阅 <code>dataStream</code> 和 <code>controlStream</code>。</li>
+<li>订阅 <code>controlStream</code> 时，根据事件类型（<code>done</code>，<code>error</code>）调用注册的处理器。处理器可以更新数据库状态、发送通知、记录日志等。</li>
+</ul>
+</li>
+<li>
+<p><strong>确保可靠性</strong>：控制事件处理应设计为幂等的，因为网络重试可能导致同一事件被多次接收。可以在处理前检查事件ID是否已处理过。</p>
+</li>
+</ol>
+<h2 id="19-场景使用project-loom虚拟线程重构阻塞式ai任务服务">19. 场景：使用Project Loom虚拟线程重构阻塞式AI任务服务<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#19-场景使用project-loom虚拟线程重构阻塞式ai任务服务" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：将传统线程池替换为虚拟线程执行器，以极低的资源消耗支持超高数量的并发阻塞任务。</p>
+<ol>
+<li><strong>执行器服务创建</strong>：
+<ul>
+<li>Java 19+ 中，使用 <code>Executors.newVirtualThreadPerTaskExecutor()</code> 创建一个为每个任务创建虚拟线程的执行器。</li>
+<li>相比于固定大小的平台线程池，虚拟线程池允许你同时”阻塞”地处理数万甚至数十万个AI任务，而底层仅需要少量平台线程支持。</li>
+</ul>
+</li>
+<li><strong>重构注意事项</strong>：
+<ul>
+<li><strong>同步锁（<code>synchronized</code>）</strong>：在虚拟线程内持有 <code>synchronized</code> 锁会阻塞其承载的平台线程，严重损害吞吐量。必须将 <code>synchronized</code> 替换为 <code>ReentrantLock</code>。</li>
+<li><strong>线程局部变量</strong>：<code>ThreadLocal</code> 在虚拟线程中仍然工作，但需注意清理，因为虚拟线程生命周期可能很短。考虑使用 <code>ScopedValue</code>（预览API）。</li>
+<li><strong>原生代码与IO</strong>：虚拟线程在等待IO（如数据库查询、HTTP请求）时会被挂起，这是其优势所在。但若任务中调用了阻塞式原生代码，仍会阻塞平台线程。</li>
+</ul>
+</li>
+<li><strong>资源限制</strong>：虽然可以创建海量虚拟线程，但仍需限制对某些有限资源（如数据库连接、外部API的QPS）的并发访问。可使用 <code>Semaphore</code> 进行控制。</li>
+<li><strong>可观测性</strong>：虚拟线程的线程栈和ID与传统线程不同，需确保日志框架和监控工具能正确识别和追踪虚拟线程。</li>
+</ol>
+<h2 id="20-场景设计用于ai服务http2长连接的连接池">20. 场景：设计用于AI服务HTTP/2长连接的连接池<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20-场景设计用于ai服务http2长连接的连接池" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>核心思路</strong>：利用高性能HTTP客户端（如基于Netty的 <code>Reactor Netty</code> 或 <code>OkHttp</code>）内置的连接池管理，并针对AI流式场景进行优化配置。</p>
+<ol>
+<li><strong>客户端选型与配置</strong>：以Spring <code>WebClient</code>（底层为Reactor Netty）为例：</li>
+</ol>
+<pre><code>spring:
+  webclient:
+    reactor-netty:
+      pool:
+        max-connections: 1000 # 连接池最大连接数
+        max-idle-time: 60s # 连接最大空闲时间
+        max-life-time: 300s # 连接最大存活时间
+        eviction-interval: 60s # 清理空闲连接的时间间隔
+        pending-acquire-timeout: 60s # 从池中获取连接的最大等待时间
+</code></pre>
+<ol start="2">
+<li>
+<p><strong>针对流式场景的优化</strong>：</p>
+<ul>
+<li><strong>连接复用</strong>：HTTP/2支持多路复用，一个连接上可以并发多个请求。对于频繁的、小的流式请求，应充分利用此特性，避免频繁建连。</li>
+<li><strong>超时设置</strong>：为流式响应设置更长的 <code>responseTimeout</code>（如几分钟），而为连接获取、读取等操作设置较短超时。</li>
+</ul>
+</li>
+<li>
+<p><strong>健康检查与熔断</strong>：</p>
+<ul>
+<li>配置连接池的健康检查机制，定期清理无效连接。</li>
+<li>结合熔断器（如Resilience4j），当某个上游AI服务端点连续失败时，熔断该端点对应的连接池，避免向故障实例发送请求。</li>
+</ul>
+</li>
+<li>
+<p><strong>监控</strong>：暴露连接池指标（如活跃连接数、空闲连接数、等待获取连接的请求数）到监控系统（如Prometheus），便于容量规划和故障排查。<code>Reactor Netty</code> 的 <code>Micrometer</code> 集成可以自动提供这些指标。</p>
+</li>
+</ol></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-1" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#类别二高并发流式响应与异步处理" data-for="类别二高并发流式响应与异步处理">类别二：高并发、流式响应与异步处理</a></li><li class="depth-1"><a href="#1-场景服务端sse代理的断线重连消息去重与网络抖动处理" data-for="1-场景服务端sse代理的断线重连消息去重与网络抖动处理">1. 场景：服务端SSE代理的断线重连、消息去重与网络抖动处理</a></li><li class="depth-1"><a href="#2-场景服务端的流式markdown分片与转发" data-for="2-场景服务端的流式markdown分片与转发">2. 场景：服务端的流式Markdown分片与转发</a></li><li class="depth-1"><a href="#3-场景服务端对多独立片段流式响应的chunk合并算法" data-for="3-场景服务端对多独立片段流式响应的chunk合并算法">3. 场景：服务端对多独立片段流式响应的Chunk合并算法</a></li><li class="depth-1"><a href="#4-场景服务端支持优先级调度的流式请求队列" data-for="4-场景服务端支持优先级调度的流式请求队列">4. 场景：服务端支持“优先级调度”的流式请求队列</a></li><li class="depth-1"><a href="#5-场景在spring-webflux中优化ai流式响应的处理与资源隔离" data-for="5-场景在spring-webflux中优化ai流式响应的处理与资源隔离">5. 场景：在Spring WebFlux中优化AI流式响应的处理与资源隔离</a></li><li class="depth-1"><a href="#6-场景服务端的流式数据缓存与断点续传支持" data-for="6-场景服务端的流式数据缓存与断点续传支持">6. 场景：服务端的流式数据缓存与断点续传支持</a></li><li class="depth-1"><a href="#7-场景利用java并发工具并行处理多个ai流式响应" data-for="7-场景利用java并发工具并行处理多个ai流式响应">7. 场景：利用Java并发工具并行处理多个AI流式响应</a></li><li class="depth-1"><a href="#8-场景解析ai服务端返回的流式数据中的自定义事件" data-for="8-场景解析ai服务端返回的流式数据中的自定义事件">8. 场景：解析AI服务端返回的流式数据中的自定义事件</a></li><li class="depth-1"><a href="#9-场景服务端实现流式进度估算并推送给客户端" data-for="9-场景服务端实现流式进度估算并推送给客户端">9. 场景：服务端实现“流式进度估算”并推送给客户端</a></li><li class="depth-1"><a href="#10-场景协调ai流式输出与语音合成tts的服务端同步" data-for="10-场景协调ai流式输出与语音合成tts的服务端同步">10. 场景：协调AI流式输出与语音合成(TTS)的服务端同步</a></li><li class="depth-1"><a href="#11-场景从数据库分页读取海量数据分批流式发送给ai处理" data-for="11-场景从数据库分页读取海量数据分批流式发送给ai处理">11. 场景：从数据库分页读取海量数据，分批流式发送给AI处理</a></li><li class="depth-1"><a href="#12-场景异步处理翻译整本电子书的长时可分解任务" data-for="12-场景异步处理翻译整本电子书的长时可分解任务">12. 场景：异步处理“翻译整本电子书”的长时、可分解任务</a></li><li class="depth-1"><a href="#13-场景针对ai服务的分布式平滑限流" data-for="13-场景针对ai服务的分布式平滑限流">13. 场景：针对AI服务的分布式平滑限流</a></li><li class="depth-1"><a href="#14-场景在webflux中将流式fluxstring聚合为monocompleteresponse" data-for="14-场景在webflux中将流式fluxstring聚合为monocompleteresponse">14. 场景：在WebFlux中将流式Flux&lt;String>聚合为Mono&lt;CompleteResponse></a></li><li class="depth-1"><a href="#15-场景实现用户中断ai生成请求的信号传递" data-for="15-场景实现用户中断ai生成请求的信号传递">15. 场景：实现用户中断AI生成请求的信号传递</a></li><li class="depth-1"><a href="#16-场景基于消息触发并行调用多个ai服务并聚合结果" data-for="16-场景基于消息触发并行调用多个ai服务并聚合结果">16. 场景：基于消息触发，并行调用多个AI服务并聚合结果</a></li><li class="depth-1"><a href="#17-场景对低优先级ai任务实现基于优先级的延迟调度" data-for="17-场景对低优先级ai任务实现基于优先级的延迟调度">17. 场景：对低优先级AI任务实现基于优先级的延迟调度</a></li><li class="depth-1"><a href="#18-场景解析ai流式响应中的自定义控制事件" data-for="18-场景解析ai流式响应中的自定义控制事件">18. 场景：解析AI流式响应中的自定义控制事件</a></li><li class="depth-1"><a href="#19-场景使用project-loom虚拟线程重构阻塞式ai任务服务" data-for="19-场景使用project-loom虚拟线程重构阻塞式ai任务服务">19. 场景：使用Project Loom虚拟线程重构阻塞式AI任务服务</a></li><li class="depth-1"><a href="#20-场景设计用于ai服务http2长连接的连接池" data-for="20-场景设计用于ai服务http2长连接的连接池">20. 场景：设计用于AI服务HTTP/2长连接的连接池</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-3426b91c.js" type="module" data-persist="true"></script></html>
