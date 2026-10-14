@@ -1,0 +1,41 @@
+name: Build Quartz Site
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [llm-atlas-update]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+
+      - name: Checkout llm-atlas
+        uses: actions/checkout@v4
+        with:
+          repository: yangmiaowei/llm-atlas
+          path: content
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
