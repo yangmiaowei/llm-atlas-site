@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Chunking</title><meta charset="utf-8"/><link rel="preload" href="../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="Chunking"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Chunking"/><meta name="twitter:description" content="Chunking [TOC] 1."/><meta property="og:description" content="Chunking [TOC] 1."/><meta property="og:image:alt" content="Chunking [TOC] 1."/><meta property="twitter:domain" content="yangmiaowei.github.io/llm-atlas-site"/><meta property="og:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/chunking/index"/><meta property="twitter:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/chunking/index"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Chunking [TOC] 1."/><meta name="generator" content="Quartz"/><link href="../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/chunking/index-og-image.webp"/><meta property="og:image:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/chunking/index-og-image.webp"/><meta name="twitter:image" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/chunking/index-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="rag/offline/chunking/index" data-basepath="/llm-atlas-site"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-23" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-23" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../rag/">RAG</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../rag/offline/">Offline</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Chunking</a></div></nav><h1 class="article-title">Chunking</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-22T01:12:49.000Z">Oct 22, 2026</time><span>12 min read</span></p></div></div><div class="popover-hint"><article class><div class="markdown-preview-view markdown-rendered"><h1 id="chunking">Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>[TOC]</p>
+<h2 id="1-核心概念">1. 核心概念<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心概念" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Chunking（分块）是将原始文档切分为适合检索与生成的片段，是 RAG 数据处理链路的重要环节。</p>
+<p>分块策略会同时影响两个环节：</p>
+<ul>
+<li><strong>Retrieval</strong>：片段是否能被准确召回、相关内容能否排在前面。</li>
+<li><strong>Generation</strong>：召回的片段是否包含足够完整的上下文，能否支持模型生成答案。</li>
+</ul>
+<p>因此，分块不是越细越好，也不是越大越好。设计目标是在<strong>检索粒度、语义完整性、上下文充分性和存储成本</strong>之间取得平衡。</p>
+<p>Chunking 决定了检索系统能够获取什么内容。如果切分时破坏了关键语义、上下文或结构，Embedding 和 Reranker 也无法凭空恢复已经丢失的信息。因此，Chunking 是 RAG 检索链路的重要基础。</p>
+<h2 id="2-主流分块策略">2. 主流分块策略<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-主流分块策略" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>策略</th><th>基本原理</th><th>优点</th><th>局限</th><th>适用场景</th></tr></thead><tbody><tr><td>固定大小分块（Fixed-size）</td><td>按字符数或 Token 数切分</td><td>简单、速度快、易于控制片段长度</td><td>可能切断句子、段落或完整论述</td><td>简单文本、日志、快速建立基线</td></tr><tr><td>滑动窗口分块（Sliding Window）</td><td>固定大小切分，并让相邻块保留部分重叠</td><td>降低边界处信息丢失的风险</td><td>增加存储与 embedding 成本，可能产生重复召回</td><td>连续性较强的文本</td></tr><tr><td>递归分块（Recursive）</td><td>按分隔符优先级，从较大的结构边界逐步细分</td><td>尽量保留自然边界，适用范围广</td><td>依赖分隔符配置；不保证每个块在语义上都完整</td><td>通用文档，常用默认方案</td></tr><tr><td>句子／段落分块</td><td>按句子或段落等自然边界切分</td><td>结构直观，易于保留局部语义</td><td>片段长度可能差异较大</td><td>结构清晰的文章、FAQ</td></tr><tr><td>语义分块（Semantic）</td><td>根据相邻句子的语义变化识别切分点</td><td>有机会使片段主题更集中</td><td>需要额外 embedding 或模型计算；效果依赖阈值与最小／最大块长</td><td>主题边界不规则的长文本</td></tr><tr><td>文档结构感知分块（Structure-aware）</td><td>利用标题、章节、段落、表格等原始结构切分</td><td>保留文档层级与来源信息</td><td>依赖文档解析质量，不同格式需要不同处理</td><td>Markdown、技术文档、PDF、手册</td></tr><tr><td>父子分块（Parent-Child）</td><td>小块用于召回，命中后取对应父块提供上下文</td><td>兼顾精确定位与上下文完整性</td><td>需要维护父子映射，生成上下文可能变长</td><td>长文档、层级清晰的知识库</td></tr></tbody></table></div>
+<h3 id="21-fixed-size-chunking">2.1 Fixed-size Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-fixed-size-chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>按预设的字符数或 Token 数直接切分，例如每块约 512 tokens。</p>
+<ul>
+<li><strong>优点</strong>：实现简单，片段长度可控，适合作为 baseline。</li>
+<li><strong>缺点</strong>：切分点不考虑语义和文档结构，可能把一句话、表格或论证拆开。</li>
+</ul>
+<h3 id="22-recursive-chunking">2.2 Recursive Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-recursive-chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>递归分块按分隔符优先级尝试切分：优先使用较大的自然边界；如果片段仍超过长度限制，再尝试更细的边界。</p>
+<p>例如：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>段落边界（空行）</span></span>
+<span data-line><span>  → 行边界（换行）</span></span>
+<span data-line><span>  → 句子边界（如 。！？）</span></span>
+<span data-line><span>  → 词边界（如空格）</span></span>
+<span data-line><span>  → 字符边界</span></span></code></pre></figure>
+<p>不同语言和 splitter 的默认分隔符可能不同。中文文档应根据实际文本补充 <code>。</code>、<code>！</code>、<code>？</code>、<code>；</code> 等分隔符。</p>
+<p>LangChain 示例：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> langchain_text_splitters </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> RecursiveCharacterTextSplitter</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">splitter </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="function"> RecursiveCharacterTextSplitter(</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;" data-token-type="important">    chunk_size</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">500</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;" data-token-type="important">    chunk_overlap</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">80</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;" data-token-type="important">    separators</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string">\n\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string">\n</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;。&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;！&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;？&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;；&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;，&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot; &quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">],</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">)</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">chunks </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> splitter.split_text(text)</span></span></code></pre></figure>
+<h3 id="23-semantic-chunking">2.3 Semantic Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-semantic-chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>一种常见做法是：</p>
+<ol>
+<li>将文档拆成句子或较小的文本单元。</li>
+<li>对各单元计算 embedding。</li>
+<li>计算相邻单元之间的语义相似度或语义距离。</li>
+<li>在语义变化较明显的位置切分，并结合块长限制进行调整。</li>
+</ol>
+<p>语义分块的目标是让每个 chunk 的主题更集中，但它并不必然优于递归分块。块过小可能提高局部匹配的精确度，却让生成模型缺少回答问题所需的上下文；额外的 embedding 计算也会增加处理成本。</p>
+<h3 id="24-document-structure-aware-chunking">2.4 Document Structure-aware Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#24-document-structure-aware-chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>根据原始文档结构切分，而不是只依赖固定长度或文本相似度。例如：</p>
+<ul>
+<li>按标题层级保留章节路径。</li>
+<li>尽量不拆散列表、代码块和表格。</li>
+<li>将文档标题、章节标题等信息作为 metadata 保存。</li>
+<li>当单个结构单元过长时，再在内部使用递归切分。</li>
+</ul>
+<h3 id="25-parent-child-chunking">2.5 Parent-Child Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#25-parent-child-chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将文档组织为不同粒度的块：</p>
+<ul>
+<li><strong>Child chunk</strong>：较小的片段，用于检索和精确定位。</li>
+<li><strong>Parent chunk</strong>：较大的片段，例如所属段落或章节；命中 child 后，可取回 parent 作为生成上下文。</li>
+</ul>
+<p>这种方式尝试同时满足检索的精确性和生成所需的上下文完整性。父块不一定必须是整篇文档，具体粒度应根据文档结构与上下文窗口确定。</p>
+<h2 id="3-chunk-size-与-overlap">3. Chunk Size 与 Overlap<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-chunk-size-与-overlap" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-chunk-size块大小">3.1 Chunk Size：块大小<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-chunk-size块大小" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Chunk size 决定每个片段包含多少内容。不存在适用于所有语料的固定最优值，可先用一个合理范围建立基线，再通过检索和生成评测调整。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>块大小</th><th>可能的优点</th><th>可能的问题</th></tr></thead><tbody><tr><td>较小</td><td>主题集中，检索定位更精细</td><td>论述、定义或条件可能被拆开，生成时上下文不足</td></tr><tr><td>较大</td><td>更容易保留完整论述与必要背景</td><td>无关内容增加，相关信息可能被稀释，影响召回；上下文占用更高</td></tr></tbody></table></div>
+<p>**常见起始配置：**可尝试 256–512 tokens，并根据任务调整。它是实验起点，不是通用最优值。若使用按字符计量的 splitter，不能直接把字符数参数当作 Token 数。</p>
+<h3 id="32-overlap相邻块重叠">3.2 Overlap：相邻块重叠<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-overlap相邻块重叠" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Overlap 是相邻 chunk 之间重复保留的内容，用于降低关键信息恰好落在切分边界、导致上下文断裂的风险。</p>
+<ul>
+<li>常见起始范围可设为块大小的约 10%–20%。</li>
+<li>Overlap 太小，边界处的信息仍可能不完整。</li>
+<li>Overlap 太大，会增加存储和 embedding 成本，也可能让检索结果包含大量重复内容。</li>
+</ul>
+<p>例如，若 chunk size 为 500 tokens，可以从约 50–100 tokens 的 overlap 开始测试。</p>
+<h3 id="33-如何判断块太大或太小">3.3 如何判断块太大或太小？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-如何判断块太大或太小" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>块太大</strong>：无关内容混入较多，匹配粒度变粗，相关内容可能被稀释；同时占用更多上下文窗口。</li>
+<li><strong>块太小</strong>：定义、条件、步骤或论证可能被拆开，召回片段缺少回答所需的前后文。</li>
+<li><strong>Overlap 过大</strong>：相邻块高度重复，增加成本，并可能导致 Top-K 结果被近似重复片段占据。</li>
+</ul>
+<p>不能只看检索命中率判断分块效果。还应观察召回片段是否包含完整证据，以及最终答案的正确性与完整性。</p>
+<h2 id="4-不同文档类型的分块方式">4. 不同文档类型的分块方式<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-不同文档类型的分块方式" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>文档类型</th><th>建议处理方式</th><th>注意事项</th></tr></thead><tbody><tr><td>Markdown／技术文档</td><td>按标题层级和段落组织，超长章节再递归切分</td><td>保留标题路径、章节等 metadata</td></tr><tr><td>PDF</td><td>先进行版面与文本解析，再根据段落、标题、页码等结构切分</td><td>表格、双栏排版、页眉页脚和扫描图片需要单独处理</td></tr><tr><td>表格</td><td>尽量保留表头与对应行；必要时按行组或业务记录切分</td><td>不要让数据行脱离列名与单位</td></tr><tr><td>代码</td><td>优先按模块、类、函数或完整代码块切分</td><td>保留文件路径、符号名和相关注释</td></tr><tr><td>FAQ</td><td>将问题与对应答案放在同一块</td><td>超长答案可分层切分，同时保留问题与标题信息</td></tr><tr><td>日志</td><td>按事件、记录或时间窗口切分</td><td>保留时间戳、服务名、级别、请求 ID 等元数据</td></tr><tr><td>法律／制度文档</td><td>优先保留条款、章节及其编号</td><td>不要把适用条件、例外条款与主体规定拆散</td></tr></tbody></table></div>
+<h2 id="5-metadata-与层级信息">5. Metadata 与层级信息<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-metadata-与层级信息" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Metadata 用于描述 chunk 的来源和属性，常见字段包括：</p>
+<ul>
+<li><code>document_id</code>：原始文档标识。</li>
+<li><code>title</code>：文档标题。</li>
+<li><code>section</code>：章节或标题路径。</li>
+<li><code>page</code>：页码。</li>
+<li><code>source</code>：来源地址或文件路径。</li>
+<li><code>created_at</code> / <code>updated_at</code>：文档时间信息。</li>
+<li><code>access_control</code>：权限相关信息（如适用）。</li>
+</ul>
+<p>Metadata 可用于检索过滤、结果溯源、权限控制和上下文组织。它与 chunk 正文不同：metadata 描述文档或片段的属性，不应把所有结构信息都无差别地拼进正文。</p>
+<h2 id="6-chunking-设计与优化">6. Chunking 设计与优化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-chunking-设计与优化" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>调整 Chunking 通常需要重新切分并重新生成 Embedding，属于一次性离线成本。相比直接升级 Embedding 模型或引入更复杂的检索组件，先优化分块是值得尝试的低复杂度方案。</p>
+<ol>
+<li><strong>看数据</strong>：先确认语料是 Markdown、PDF、FAQ、代码、日志还是表格，尽量利用其天然结构。</li>
+<li><strong>建立基线</strong>：通用文本可从简单方案开始，确定初始 chunk size 与 overlap。</li>
+<li><strong>构建评测</strong>：通过 Eval 检查召回质量、上下文完整性和最终答案质量做对照实验，判断 Chunking 是否构成瓶颈。</li>
+<li><strong>引入 Reranker</strong>：如果候选文档的排序存在问题，再加入重排序优化。</li>
+<li><strong>按需升级</strong>：根据评测结果，再考虑更换 Embedding 模型、Late Chunking 或 Contextual Retrieval 等。</li>
+</ol></div></article><div class="page-listing"><p>0 items under this folder.</p><div><ul class="section-ul"></ul></div></div></div><hr/><div class="page-footer"></div></div><div class="right sidebar"></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript-3426b91c.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Retrieval</title><meta charset="utf-8"/><link rel="preload" href="../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="Retrieval"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Retrieval"/><meta name="twitter:description" content="Retrieval [TOC] 0."/><meta property="og:description" content="Retrieval [TOC] 0."/><meta property="og:image:alt" content="Retrieval [TOC] 0."/><meta property="twitter:domain" content="yangmiaowei.github.io/llm-atlas-site"/><meta property="og:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/online/retrieval/index"/><meta property="twitter:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/online/retrieval/index"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Retrieval [TOC] 0."/><meta name="generator" content="Quartz"/><link href="../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://yangmiaowei.github.io/llm-atlas-site/rag/online/retrieval/index-og-image.webp"/><meta property="og:image:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/online/retrieval/index-og-image.webp"/><meta name="twitter:image" content="https://yangmiaowei.github.io/llm-atlas-site/rag/online/retrieval/index-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="rag/online/retrieval/index" data-basepath="/llm-atlas-site"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-31" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-31" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../rag/">RAG</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../rag/online/">Online</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Retrieval</a></div></nav><h1 class="article-title">Retrieval</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-22T01:12:49.000Z">Oct 22, 2026</time><span>26 min read</span></p></div></div><div class="popover-hint"><article class><div class="markdown-preview-view markdown-rendered"><h1 id="retrieval">Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>[TOC]</p>
+<h2 id="0-总览">0. 总览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-总览" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>核心目标：从知识库中找出与 Query 相关的候选文档，并在召回率、精确率、相关性、延迟和成本之间取得平衡。</p>
+<p>Retrieval 的典型流程：</p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;\nflowchart TD\n    A[\&quot;Query Processing\&quot;] --> B[\&quot;Candidate Retrieval\&quot;]\n    B --> C[\&quot;Candidate Merge / Deduplication\&quot;]\n    C --> D{\&quot;是否需要融合？\&quot;}\n    D -->|多路结果| E[\&quot;Fusion / RRF\&quot;]\n    D -->|单路结果| F[\&quot;候选集\&quot;]\n    E --> G[\&quot;Reranking（可选）\&quot;]\n    F --> G\n    G --> H[\&quot;Top-K Selection\&quot;]\n    H --> I[\&quot;Context Construction\&quot;]\n    style A fill:#e3f2fd,stroke:#1976d2,color:#0d47a1\n    style E fill:#f3e5f5,stroke:#8e24aa,color:#4a148c\n    style G fill:#fff3e0,stroke:#ef6c00,color:#e65100\n    style I fill:#e8f5e9,stroke:#388e3c,color:#1b5e20\n&quot;">
+flowchart TD
+    A[&quot;Query Processing&quot;] --> B[&quot;Candidate Retrieval&quot;]
+    B --> C[&quot;Candidate Merge / Deduplication&quot;]
+    C --> D{&quot;是否需要融合？&quot;}
+    D -->|多路结果| E[&quot;Fusion / RRF&quot;]
+    D -->|单路结果| F[&quot;候选集&quot;]
+    E --> G[&quot;Reranking（可选）&quot;]
+    F --> G
+    G --> H[&quot;Top-K Selection&quot;]
+    H --> I[&quot;Context Construction&quot;]
+    style A fill:#e3f2fd,stroke:#1976d2,color:#0d47a1
+    style E fill:#f3e5f5,stroke:#8e24aa,color:#4a148c
+    style G fill:#fff3e0,stroke:#ef6c00,color:#e65100
+    style I fill:#e8f5e9,stroke:#388e3c,color:#1b5e20
+
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="01-按检索方式分类">0.1 按检索方式分类<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#01-按检索方式分类" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Dense Retrieval（稠密检索）</strong>：基于 Embedding 和向量相似度，擅长语义匹配。</li>
+<li><strong>Sparse Retrieval（稀疏检索）</strong>：基于关键词及倒排索引，擅长精确词项匹配。</li>
+<li><strong>Hybrid Retrieval（混合检索）</strong>：结合 Dense 和 Sparse Retrieval。</li>
+<li><strong>Multi-way Retrieval（多路召回）</strong>：通过多个检索器、查询或索引并行召回候选结果。</li>
+<li><strong>Metadata Filtering（元数据过滤）</strong>：根据时间、部门、文档类型等结构化条件约束检索范围。</li>
+</ul>
+<h3 id="02-检索优化的不同层次">0.2 检索优化的不同层次<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#02-检索优化的不同层次" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层次</th><th>核心问题</th><th>主要方法</th></tr></thead><tbody><tr><td>候选召回</td><td>相关文档能否被找出来？</td><td>Dense、BM25、多路召回</td></tr><tr><td>检索范围</td><td>应该搜索哪些数据？</td><td>Metadata Filtering</td></tr><tr><td>结果融合</td><td>不同检索器的结果如何合并？</td><td>RRF、加权融合</td></tr><tr><td>结果排序</td><td>哪些候选文档真正最相关？</td><td>Reranker</td></tr><tr><td>上下文选择</td><td>给 LLM 多少个文档？</td><td>Top-K Optimization</td></tr><tr><td>检索范式</td><td>如何处理复杂问题？</td><td>Multi-hop、Iterative、Agentic Retrieval</td></tr></tbody></table></div>
+<p>注意：这些不是完全互斥的算法分类。例如，Hybrid Retrieval 可以包含 Multi-way Retrieval；Metadata Filtering 可以发生在召回之前、召回过程中或召回之后，具体取决于检索系统。</p>
+<h2 id="一检索">一、检索<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一检索" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="1-dense-retrieval稠密检索">1. Dense Retrieval（稠密检索）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-dense-retrieval稠密检索" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="11-基本原理">1.1 基本原理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-基本原理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将 Query 和 Document 编码为向量，通过向量相似度检索语义相关的文档。使用深度学习模型将文本映射为低维稠密向量，计算语义相似度。</p>
+<p>常见相似度度量：</p>
+<ul>
+<li>Cosine Similarity</li>
+<li>Dot Product</li>
+<li>Euclidean Distance</li>
+</ul>
+<p>优势：能够匹配不同表达方式的相似语义。理解语义，解决词汇鸿沟，泛化能力强。</p>
+<p>局限：对精确编号、专有名词、缩写和罕见术语的匹配不一定可靠。领域适配需要训练数据，对领域外或表述差异大的查询可能失效。</p>
+<h3 id="12-top-k-选择">1.2 Top-k 选择<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-top-k-选择" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>固定 Embedding 模型、数据集和其他检索参数。</li>
+<li>测试多个 K 值，例如 1、3、5、10、20。</li>
+<li>计算 Recall@K、MRR、NDCG 等检索指标。</li>
+<li>同时测量检索延迟、Rerank 延迟、上下文 Token 数和回答质量。</li>
+<li>选择满足质量要求且成本可接受的 K。</li>
+</ol>
+<p>Recall@K 随 K 增大通常不会下降，但这不意味着回答质量一定持续提升。</p>
+<p>K 过小：可能遗漏关键证据，导致回答不全。</p>
+<p>K 过大：可能引入噪声、增加上下文成本，并使延迟上升。</p>
+<h3 id="13-索引与搜索算法annapproximate-nearest-neighbor">1.3 索引与搜索算法：ANN（Approximate Nearest Neighbor）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-索引与搜索算法annapproximate-nearest-neighbor" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>ANN（近似最近邻）用于加速大规模向量检索。</p>
+<p>核心思想：不是遍历所有向量找精确最近邻，而是通过索引结构快速找到足够接近的候选向量，以换取更低的检索延迟。</p>
+<p><strong>主流 ANN 算法：</strong></p>
+<h4 id="1-ivfinverted-file-index">1. IVF（Inverted File Index）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-ivfinverted-file-index" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p>原理：先对向量聚类，再搜索最近的几个簇。</p>
+</li>
+<li>
+<p>核心参数：<code>nlist</code>（聚类簇数量）、<code>nprobe</code>（查询时搜索的簇数量）。</p>
+</li>
+<li>
+<p>优势：可控精度，可调节搜索范围，适合超大规模向量检索。</p>
+</li>
+<li>
+<p>代价：搜索的簇越少，延迟通常越低，但可能漏掉相关结果。</p>
+</li>
+</ul>
+<h4 id="2-hnswhierarchical-navigable-small-world">2. HNSW（Hierarchical Navigable Small World）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-hnswhierarchical-navigable-small-world" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p>原理：构建具有不同层级的近邻图。</p>
+</li>
+<li>
+<p>核心原理</p>
+<ul>
+<li>多层图结构： 每个向量对应图中的一个节点，节点之间根据向量距离建立连接。底层包含全部节点，上层是逐渐稀疏的节点子集。</li>
+<li>分层导航： 从最高层的入口节点开始，逐步移动到与查询向量更接近的节点，再进入下一层继续搜索。</li>
+<li>近似最近邻搜索： 到达底层后，在一定的搜索范围内探索候选节点，返回最接近查询向量的 Top-K 结果。由于搜索范围受到控制，结果不保证是全局精确最近邻。</li>
+</ul>
+</li>
+<li>
+<p>核心参数：</p>
+<ul>
+<li><code>M</code>：控制图的连接度，通常影响节点的邻居连接数量。增大 <code>M</code> 通常会增加内存消耗和建图成本，并可能改善搜索效果。</li>
+<li><code>ef_construction</code>：建图时的候选搜索宽度，越大通常建图越慢，图质量越好。</li>
+<li><code>ef</code> / <code>ef_search</code>：查询时的搜索宽度，越大通常召回率越高，但查询延迟也可能增加。</li>
+</ul>
+</li>
+<li>
+<p>优势：查询速度快，召回率与延迟之间可以调节。</p>
+</li>
+<li>
+<p>代价：内存占用通常较高。</p>
+</li>
+<li>
+<p>直观理解：多层导航。可以把 HNSW 理解为一张具有不同导航尺度的地图：</p>
+<ul>
+<li>顶层： 几个向量，长距离连接，粗略导航</li>
+<li>中层： 更多向量，中距离连接</li>
+<li>底层： 全部向量，密集短距离连接，精确定位</li>
+</ul>
+</li>
+<li>
+<p>复杂度从 O(N) 降到 O(log N)</p>
+</li>
+</ul>
+<h4 id="3-pq--opq向量量化与压缩">3. PQ / OPQ（向量量化与压缩）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-pq--opq向量量化与压缩" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>PQ（Product Quantization）：将向量划分为多个子空间，分别量化编码，以压缩向量存储。</li>
+<li>OPQ（Optimized Product Quantization）：通过优化向量空间的变换，改善量化效果。</li>
+<li>优势：显著降低大规模向量检索的内存开销。</li>
+<li>代价：量化会引入近似误差，精度有损。</li>
+</ul>
+<p>（乘积量化）压缩向量维度</p>
+<h4 id="4-tree-based-index">4. Tree-based Index<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-tree-based-index" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>KD-Tree、Ball Tree 等基于树的索引。</li>
+<li>在低维空间中可能有效；维度较高时，剪枝效果通常会退化。</li>
+<li>高维向量检索中常见的方案还包括 HNSW、IVF 和量化方法。</li>
+</ul>
+<h2 id="2-sparse-retrieval稀疏检索">2. Sparse Retrieval（稀疏检索）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-sparse-retrieval稀疏检索" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="21-基本原理">2.1 基本原理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-基本原理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>基于词频统计（如TF-IDF, BM25），将文档和查询表示为高维稀疏向量。</p>
+<p>优点：精确匹配关键词，解释性强，无需训练。</p>
+<p>缺点：无法处理词汇鸿沟，对同义词、语义泛化能力弱。</p>
+<h3 id="22-inverted-index倒排索引">2.2 Inverted Index（倒排索引）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-inverted-index倒排索引" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>倒排索引建立从词项到包含该词项的文档列表的映射。</p>
+<p>例如：</p>
+<ul>
+<li><code>HPA → [文档 A, 文档 C]</code></li>
+<li><code>Kubernetes → [文档 B, 文档 C]</code></li>
+</ul>
+<p>查询时可以快速定位包含指定词项的文档，而不必逐篇扫描全文。</p>
+<h3 id="23-评分方法">2.3 评分方法<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-评分方法" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="231-bm25">2.3.1 BM25<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#231-bm25" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>BM25 是经典的关键词检索排序算法。</p>
+<p>核心因素：</p>
+<ul>
+<li>词项在文档中的出现频率（TF）。</li>
+<li>词项在整个语料中的区分能力（IDF）。</li>
+<li>文档长度归一化。</li>
+</ul>
+<p>优势：适合编号、缩写、产品名称、专业术语和精确关键词匹配。</p>
+<p>局限：对同义词和不同表达方式之间的语义关联，通常不如 Dense Retrieval。</p>
+<h4 id="232-tf-idf">2.3.2 TF-IDF<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#232-tf-idf" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h2 id="3-hybrid-retrieval混合检索">3. Hybrid Retrieval（混合检索）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-hybrid-retrieval混合检索" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Hybrid Retrieval 常见 Dense Retrieval + Sparse Retrieval ，即 Embedding + BM25 把两种检索方法并行跑</p>
+<p>纯向量检索的三个致命问题</p>
+<p>① 精确匹配不行——用户搜”RFC 7231”，向量检索可能返回”HTTP 协议规范”这种语义相关但没提到 RFC 7231 的文档。因为它靠语义相似度，不是精确匹配。</p>
+<p>② 专业术语召回差——“K8s 的 HPA 怎么配置”，向量检索可能找的是”Kubernetes 自动扩缩容”，而 真正包含 HPA 配置细节的文档反而排不上。专业术语的向量表示和口语描述的向量表示距离可能很 远。</p>
+<p>③ 专有名词遗漏——产品名、人名、缩写这些，向量检索容易丢失。</p>
+<p>混合检索同时跑两路： （embedding 找语义近的 + BM25 找字面准的）</p>
+<p>向量检索：抓语义相关的文档（“数据库优化”和”SQL 调优”能匹配上）</p>
+<p>关键词检索（BM25）：抓精确匹配的文档（“RFC 7231”能精确命中） 两路结果合并，取长补短。</p>
+<p>两路并行</p>
+<p>▸BM25 + Vector 两个独立检索</p>
+<pre><code>                ┌──→ BM25 (sparse, 精确字符串)─→ rank list A query ──┤                 └──→ Vector (dense, 语义相似)  ─→ rank list B
+</code></pre>
+<p>两条路径完全独立。BM25 跑倒排索引（inverted index），Vector 跑 HNSW（EP_008 讲过）。<strong>物理上分开，架构上并存</strong>。</p>
+<h2 id="4-multi-way-retrieval多路召回">4. Multi-way Retrieval（多路召回）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-multi-way-retrieval多路召回" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>多路召回是更广义的策略：通过多个检索通道并行获取候选文档。</p>
+<p>常见组合：</p>
+<ul>
+<li>Dense + BM25</li>
+<li>多个不同的 Embedding 模型</li>
+<li>原始 Query + Query Rewrite</li>
+<li>不同 Metadata 条件下的检索</li>
+<li>不同粒度或不同类型的索引</li>
+</ul>
+<h4 id="multi-retrievermulti-way-retrievalhybrid-retrieval-的区别">Multi-Retriever、Multi-way Retrieval、Hybrid Retrieval 的区别<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multi-retrievermulti-way-retrievalhybrid-retrieval-的区别" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>概念</th><th>关注点</th><th>例子</th></tr></thead><tbody><tr><td>Multi-Retriever</td><td>系统中有哪些检索器，如何组织和调用</td><td>创建多个 Retriever 并组合</td></tr><tr><td>Multi-way Retrieval</td><td>从哪些不同通道进行召回</td><td>原始 Query、改写 Query、多个索引</td></tr><tr><td>Hybrid Retrieval</td><td>如何结合不同类型的检索方式</td><td>Dense + BM25</td></tr></tbody></table></div>
+<h2 id="5-metadata-retrieval">5. Metadata Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-metadata-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>如果问题涉及精确数值、表格、筛选条件、聚合或业务统计，单纯的文本向量检索可能不是合适的主方案。</p>
+<p>可以考虑：</p>
+<ul>
+<li>
+<p>SQL 查询关系型数据库。</p>
+</li>
+<li>
+<p>对结构化字段使用过滤和索引。</p>
+<ul>
+<li>
+<p>使用结构化元数据约束检索范围，例如：</p>
+<ul>
+<li>文档类型：<code>type = &quot;manual&quot;</code></li>
+<li>部门：<code>department = &quot;finance&quot;</code></li>
+<li>时间范围：<code>date >= ...</code></li>
+<li>权限：只允许访问当前用户有权读取的文档。</li>
+</ul>
+<p>需要注意：权限过滤不仅是提升检索精度的手段，也是企业 RAG 的访问控制要求。不能因为某个文档语义相关，就绕过权限约束。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>使用文本检索与结构化查询混合的方案。</p>
+</li>
+</ul>
+<h2 id="二检索结果处理">二、检索结果处理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#二检索结果处理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>将多路检索产生的候选结果合并、去重、过滤与融合，形成统一的候选列表，为后续上下文构建提供输入。</p>
+<h3 id="1-candidate-merge">1. Candidate Merge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-candidate-merge" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将向量检索、关键词检索等多路召回得到的候选文档或片段汇集到一起，形成统一的候选集合。</p>
+<h3 id="2-deduplication">2. Deduplication<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-deduplication" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>识别并去除重复的文档或片段，避免同一内容重复出现，浪费候选名额或上下文窗口。</p>
+<h3 id="3-filtering">3. Filtering<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-filtering" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>根据相关性、业务规则、文档状态或访问权限等条件，过滤不符合要求的候选结果。</p>
+<p>注意：检索前的 Metadata Filter 用于约束召回范围；检索后的 Filtering 则用于进一步筛选已召回的候选结果。</p>
+<h3 id="4-fusion">4. Fusion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-fusion" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>综合多个检索列表的排名或分数，形成统一的候选排序。</p>
+<ul>
+<li><strong>RRF（Reciprocal Rank Fusion）</strong>：根据候选项在不同检索列表中的排名计算融合分数，不要求不同检索器的原始分数处于同一尺度。</li>
+<li><strong>Score Fusion</strong>：对不同检索器的分数进行适当归一化或校准，再加权融合。</li>
+</ul>
+<h2 id="6-fusion-融合策略">6. Fusion 融合策略<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-fusion-融合策略" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="61-加权分数融合">6.1 加权分数融合<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#61-加权分数融合" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>对稀疏检索和稠密检索的分数进行归一化后，按权重相加。</p>
+<pre><code>final_score = α * normalize(sparse_score) + (1-α) * normalize(dense_score)
+# α 为稀疏检索的权重，通常通过验证集调优获得。
+</code></pre>
+<h3 id="62-rrfreciprocal-rank-fusion结果集合并">6.2 RRF（Reciprocal Rank Fusion）结果集合并<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#62-rrfreciprocal-rank-fusion结果集合并" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>RRF（Reciprocal Rank Fusion，倒数排名融合）是一种把多个检索器的排名结果合并成一个统一排名的方法，常用于 RAG 的 Hybrid Search（混合检索）和 Multi-way Retrieval（多路召回）。例子：BM25 分数 12.4 和 cosine 相似度 0.85 不可比（量纲不同、分布不同）</p>
+<pre><code>def reciprocal_rank_fusion(result_lists, k=60):
+    scores = {}
+
+    for results in result_lists:
+        for rank, doc in enumerate(results, start=1):
+            doc_id = doc.id
+            scores[doc_id] = (
+                scores.get(doc_id, 0.0)
+                + 1.0 / (k + rank)
+            )
+
+    return sorted(
+        scores.items(),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+</code></pre>
+<p>用 RRF 把多个排名列表融合成一个最终列表。</p>
+<p>公式：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">RRF</span></span><span class="mopen">(</span><span class="mord mathnormal">d</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.3651em;vertical-align:-0.52em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.0278em;">r</span><span class="mord mathnormal mtight">an</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0315em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">d</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>其中：</p>
+<ul>
+<li><code>d</code>：候选文档。</li>
+<li><code>rankᵢ(d)</code>：文档在第 <code>i</code> 路结果中的排名。</li>
+<li><code>k</code>：平滑常数，通常设 60，不是检索结果的 Top-K 参数。</li>
+</ul>
+<p>k 是一个平滑常数，用于控制不同排名之间的分数差距。</p>
+<ul>
+<li>较小的 k：更强调排名靠前的文档，第一名与后续名次的分数差距相对更大。</li>
+<li>较大的 k：分数差距更平缓，各排名的单次贡献更接近。</li>
+</ul>
+<p>文档在多路检索中排名越靠前，累积得分通常越高。</p>
+<p>RRF 使用的是排名，而不是原始相似度分数。因此，即使不同检索器的分数尺度不同，也可以融合。</p>
+<p><strong>只用排名，不用分数</strong>。两个 list 里都靠前的文档 RRF 分高，融合后排靠前。</p>
+<p>其他融合方法：</p>
+<ul>
+<li>加权分数融合。</li>
+<li>合并候选集后去重。</li>
+<li>合并候选集后交给 Reranker 排序。</li>
+</ul>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;\nflowchart TD\n    Q[\&quot;用户问题&lt;br/>K8s 的 HPA 怎么配置\&quot;] -->|语义检索| V\n    Q -->|关键词检索| B\n\n    subgraph SG1[\&quot;向量检索（语义匹配）\&quot;]\n        V[\&quot;向量检索（语义匹配）&lt;br/>匹配：Kubernetes 自动扩缩容方法&lt;br/>匹配：Pod 资源管理和弹性伸缩&lt;br/>问题：语义相关，但缺少 HPA 配置细节\&quot;]\n    end\n\n    subgraph SG2[\&quot;BM25（关键词匹配）\&quot;]\n        B[\&quot;BM25（关键词匹配）&lt;br/>匹配：HPA 配置参数详解&lt;br/>匹配：kubectl autoscale 命令用法&lt;br/>问题：侧重关键词，可能遗漏语义相关内容\&quot;]\n    end\n\n    V --> RRF\n    B --> RRF\n\n    RRF[\&quot;RRF 合并（Reciprocal Rank Fusion）&lt;br/>score(d) = 1 / (k + rank_vec) + 1 / (k + rank_bm25)&lt;br/>融合两路排名，综合不同检索方式的优势\&quot;]\n\n    RRF --> R[\&quot;合并结果&lt;br/>HPA 配置参数 + 弹性伸缩方法\&quot;]\n\n    classDef orange fill:#fff3e0,stroke:#ff9800,color:#e65100\n    classDef green fill:#e8f5e9,stroke:#4caf50,color:#1b5e20\n    classDef blue fill:#e3f2fd,stroke:#2196f3,color:#0d47a1\n    classDef purple fill:#f3e5f5,stroke:#9c27b0,color:#4a148c\n    classDef green2 fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20\n\n    class Q orange\n    class V green\n    class B blue\n    class RRF purple\n    class R green2\n\n    style SG1 fill:#f8fff8,stroke:#81c784,stroke-width:1px\n    style SG2 fill:#f5faff,stroke:#64b5f6,stroke-width:1px\n&quot;">
+flowchart TD
+    Q[&quot;用户问题&lt;br/>K8s 的 HPA 怎么配置&quot;] -->|语义检索| V
+    Q -->|关键词检索| B
+
+    subgraph SG1[&quot;向量检索（语义匹配）&quot;]
+        V[&quot;向量检索（语义匹配）&lt;br/>匹配：Kubernetes 自动扩缩容方法&lt;br/>匹配：Pod 资源管理和弹性伸缩&lt;br/>问题：语义相关，但缺少 HPA 配置细节&quot;]
+    end
+
+    subgraph SG2[&quot;BM25（关键词匹配）&quot;]
+        B[&quot;BM25（关键词匹配）&lt;br/>匹配：HPA 配置参数详解&lt;br/>匹配：kubectl autoscale 命令用法&lt;br/>问题：侧重关键词，可能遗漏语义相关内容&quot;]
+    end
+
+    V --> RRF
+    B --> RRF
+
+    RRF[&quot;RRF 合并（Reciprocal Rank Fusion）&lt;br/>score(d) = 1 / (k + rank_vec) + 1 / (k + rank_bm25)&lt;br/>融合两路排名，综合不同检索方式的优势&quot;]
+
+    RRF --> R[&quot;合并结果&lt;br/>HPA 配置参数 + 弹性伸缩方法&quot;]
+
+    classDef orange fill:#fff3e0,stroke:#ff9800,color:#e65100
+    classDef green fill:#e8f5e9,stroke:#4caf50,color:#1b5e20
+    classDef blue fill:#e3f2fd,stroke:#2196f3,color:#0d47a1
+    classDef purple fill:#f3e5f5,stroke:#9c27b0,color:#4a148c
+    classDef green2 fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20
+
+    class Q orange
+    class V green
+    class B blue
+    class RRF purple
+    class R green2
+
+    style SG1 fill:#f8fff8,stroke:#81c784,stroke-width:1px
+    style SG2 fill:#f5faff,stroke:#64b5f6,stroke-width:1px
+
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="为什么-rrf-出乎意料地有效">为什么 RRF 出乎意料地有效<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#为什么-rrf-出乎意料地有效" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>“Zero-shot” — 不需要训练</li>
+<li>不需要分数归一化(BM25 vs cosine 量纲冲突全不用管)</li>
+<li>跟谁都能配 — 加第三个 ranker(reranker / KG)直接 Σ</li>
+</ol>
+<h3 id="hybrid-search-默认-fusion-算法与各数据库支持">Hybrid Search 默认 Fusion 算法与各数据库支持<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hybrid-search-默认-fusion-算法与各数据库支持" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>类别</th><th>数据库 / 搜索引擎</th><th>Fusion 支持方式</th></tr></thead><tbody><tr><td>默认采用 RRF</td><td>Weaviate</td><td>默认使用 RRF</td></tr><tr><td>默认采用 RRF</td><td>Azure AI Search</td><td>支持 RRF 融合</td></tr><tr><td>内置 Retriever</td><td>Elasticsearch 8.9+</td><td>内置 RRF Retriever</td></tr><tr><td>Hybrid Pipeline</td><td>OpenSearch</td><td>Hybrid Search Pipeline + RRF</td></tr><tr><td>First-class API</td><td>Qdrant</td><td><code>Fusion.RRF</code></td></tr><tr><td>一行命令</td><td>Redis 8.4</td><td><code>FT.HYBRID</code> 混合检索接口</td></tr><tr><td>特殊情况</td><td>pgvector</td><td>通常需在应用层手动组合不同检索结果</td></tr></tbody></table></div>
+<h2 id="7-高级-retrieval-范式">7. 高级 Retrieval 范式<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-高级-retrieval-范式" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="multi-hop-retrieval">Multi-hop Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multi-hop-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>需要结合多个事实或多个文档才能回答问题。</p>
+<h3 id="iterative-retrieval">Iterative Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#iterative-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>先检索一轮，再根据中间结果更新查询或检索策略，进行下一轮检索。</p>
+<h3 id="recursive-retrieval">Recursive Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recursive-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>通过递归方式展开检索或处理层次化内容。</p>
+<h3 id="graph-retrieval">Graph Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#graph-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>利用实体、关系和图结构查找关联信息，适合涉及多实体关联、关系查询和多跳关系的问题。</p>
+<h4 id="1-核心原理">1. 核心原理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心原理" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>知识图谱（Knowledge Graph，KG）将知识组织为实体及其关系构成的图，通常以三元组表示事实：</p>
+<pre><code>(头实体, 关系, 尾实体)
+</code></pre>
+<p>例如：<code>(Kubernetes, 包含组件, HPA)</code>。</p>
+<p>图检索可以根据实体、关系和图结构查找关联信息，支持关系查询、邻居扩展和多跳路径查询。</p>
+<h4 id="2-知识图谱构建流程">2. 知识图谱构建流程<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-知识图谱构建流程" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>构建 → 存储 → 查询 → 应用</p>
+<ol>
+<li>数据获取与清洗：爬取或导入数据，清洗并规范化文本。</li>
+<li>知识抽取：使用 DeepKE 等工具抽取实体、关系及属性。</li>
+<li>图存储：将抽取结果存入 Neo4j 等图数据库。</li>
+<li>查询与应用：通过图查询获取关联事实，可结合 Python 构建问答应用。</li>
+<li>可视化（可选）：使用 ECharts 等工具展示实体及关系网络。</li>
+</ol>
+<h4 id="3-知识图谱检索与向量检索对比">3. 知识图谱检索与向量检索对比<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-知识图谱检索与向量检索对比" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>对比维度</th><th>知识图谱（KG）检索</th><th>向量检索</th></tr></thead><tbody><tr><td>检索依据</td><td>实体、关系、属性及图结构</td><td>Embedding 向量及相似度</td></tr><tr><td>优势</td><td>擅长明确的关系查询、多跳路径查询和结构化事实查询</td><td>擅长语义匹配、不同表达之间的关联和主题相关内容召回</td></tr><tr><td>局限</td><td>依赖图谱中已抽取并存储的知识，图谱质量影响检索效果</td><td>可能召回语义相似但实际不相关的内容，关系链查询通常需要额外机制</td></tr><tr><td>典型输出</td><td>实体、关系、属性、路径或结构化事实</td><td>按相关性排序的文本块或其他向量化对象</td></tr><tr><td>可解释性</td><td>高，答案路径清晰可溯</td><td>低，相似度计算像一个黑盒</td></tr></tbody></table></div>
+<p>注意：这里比较的是知识图谱检索与向量检索，而不是完整的 KG 系统与传统 RAG。RAG 可以使用 BM25、向量检索、元数据过滤等多种技术；知识图谱也可以与文本检索结合使用。</p>
+<h4 id="4-与-rag-的结合">4. 与 RAG 的结合<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-与-rag-的结合" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>知识图谱与 RAG 并非相互替代的方案，可以组合构建 GraphRAG 或混合检索系统。</p>
+<ul>
+<li>知识图谱：提供实体、关系和结构化事实，适合明确的关系查询与多跳关联。</li>
+<li>文本检索：召回相关文本片段，为问题提供原始资料、详细描述和上下文。</li>
+<li>融合应用：根据问题类型结合图检索与文本检索，再对结果进行整合，交由 LLM 生成回答。</li>
+</ul>
+<p>例如，回答“某个 Kubernetes 组件与哪些资源有关、它们之间是什么关系”时，可以通过图结构查找关联实体，再检索相关文档获取配置细节和使用说明。</p>
+<h3 id="agentic-retrieval">Agentic Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>由 Agent 根据当前问题、检索结果和中间推理动态决定下一步搜索、工具调用或查询修改。</p>
+<p>这些范式可以组合使用，并不是相互排斥的算法类别。</p>
+<h2 id="特殊检索策略parent-child-与-raptor">特殊检索策略：Parent-Child 与 RAPTOR<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#特殊检索策略parent-child-与-raptor" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>Parent-Child 和 RAPTOR 都是 RAG 中用于优化检索效果的技术。Parent-Child 在索引阶段建立父子文本块关系，在检索阶段通过子块进行精准召回并返回父块作为上下文；RAPTOR 在索引阶段递归聚类并生成摘要，构建层次化树结构，在检索阶段利用不同层级节点实现多粒度检索。</p>
+</blockquote>
+<p>一个关键区别：</p>
+<ul>
+<li>Parent-Child：主要解决检索粒度太小、上下文不完整的问题。Dify</li>
+<li>RAPTOR：主要解决长文档中信息分散、局部文本块难以表达高层语义的问题。RagFlow</li>
+</ul>
+<h3 id="parent-child-retrieval">Parent-Child Retrieval<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parent-child-retrieval" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>在索引阶段建立父块与子块之间的层次关系。</p>
+<ul>
+<li>召回：通过较小的子块进行精准匹配。</li>
+<li>返回：根据父子映射获取更大的父块作为上下文。</li>
+</ul>
+<p>主要解决的问题：子块容易精确命中，但单独作为上下文时信息不完整。</p>
+<h3 id="raptor">RAPTOR<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#raptor" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>通过递归聚类与摘要构建多层级的树形表示。</p>
+<ul>
+<li>底层：较细粒度的文本块。</li>
+<li>高层：聚类后生成的摘要节点。</li>
+<li>检索：根据任务从不同层级获取细节或高层语义信息。</li>
+</ul>
+<p>主要解决的问题：长文档中的信息分散在不同位置，单个局部文本块难以表达整体主题。</p>
+<p>核心区别：</p>
+<ul>
+<li>Parent-Child：重点是子块召回与父块上下文扩展。</li>
+<li>RAPTOR：重点是通过递归聚类、摘要和树形结构实现多粒度检索。</li>
+</ul>
+<p>两者主要涉及索引组织与检索策略的设计，可以与 Dense Retrieval、Hybrid Retrieval 和 Reranking 组合使用。</p>
+<h2 id="三-context-construction-模型上下文构建">三、 Context Construction 模型上下文构建<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#三-context-construction-模型上下文构建" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>从处理后的候选列表中选择合适的证据，组织成模型可以使用的上下文，并构建最终输入。</p>
+<h3 id="41-top-k-selection">4.1 Top-K Selection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#41-top-k-selection" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>根据排序结果选择前 K 个候选片段，控制进入后续上下文构建流程的候选数量。</p>
+<p>Top-K 表示最终保留多少个候选结果或上下文片段。</p>
+<p>注意区分：</p>
+<ul>
+<li><strong>Candidate K</strong>：召回阶段获取的候选文档数量。</li>
+<li><strong>Rerank K</strong>：交给重排序模型处理的候选数量。</li>
+<li><strong>Final K</strong>：最终交给 LLM 的文档或文本块数量。</li>
+</ul>
+<p>这几个 K 不必相同。</p>
+<h3 id="42-context-compression">4.2 Context Compression<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#42-context-compression" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>压缩冗余内容，保留与用户问题相关的证据，减少上下文长度。</p>
+<h3 id="43-context-ordering">4.3 Context Ordering<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#43-context-ordering" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>调整上下文片段的排列顺序，兼顾相关性、信息逻辑与模型对不同位置内容的利用效果。</p>
+<h3 id="44-prompt-construction">4.4 Prompt Construction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#44-prompt-construction" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将用户问题、检索到的证据及相关指令组装为最终模型输入，供 LLM 生成回答。</p></div></article><div class="page-listing"><p>0 items under this folder.</p><div><ul class="section-ul"></ul></div></div></div><hr/><div class="page-footer"></div></div><div class="right sidebar"></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript-3426b91c.js" type="module" data-persist="true"></script></html>

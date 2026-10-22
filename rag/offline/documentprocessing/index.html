@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>DocumentProcessing</title><meta charset="utf-8"/><link rel="preload" href="../../../index-bb6c1746.css" as="style"/><link rel="preload" href="../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 5"/><meta property="og:title" content="DocumentProcessing"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="DocumentProcessing"/><meta name="twitter:description" content="Document Processing [TOC] 1. Uploading 2."/><meta property="og:description" content="Document Processing [TOC] 1. Uploading 2."/><meta property="og:image:alt" content="Document Processing [TOC] 1. Uploading 2."/><meta property="twitter:domain" content="yangmiaowei.github.io/llm-atlas-site"/><meta property="og:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/documentprocessing/index"/><meta property="twitter:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/documentprocessing/index"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Document Processing [TOC] 1. Uploading 2."/><meta name="generator" content="Quartz"/><link href="../../../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/documentprocessing/index-og-image.webp"/><meta property="og:image:url" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/documentprocessing/index-og-image.webp"/><meta name="twitter:image" content="https://yangmiaowei.github.io/llm-atlas-site/rag/offline/documentprocessing/index-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="rag/offline/documentprocessing/index" data-basepath="/llm-atlas-site"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Quartz 5</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-24" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-24" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../rag/">RAG</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../rag/offline/">Offline</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>DocumentProcessing</a></div></nav><h1 class="article-title">DocumentProcessing</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-22T01:12:49.000Z">Oct 22, 2026</time><span>14 min read</span></p></div></div><div class="popover-hint"><article class><div class="markdown-preview-view markdown-rendered"><h1 id="document-processing">Document Processing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#document-processing" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>[TOC]</p>
+<h2 id="1-uploading">1. Uploading<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-uploading" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="2-parsing">2. Parsing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-parsing" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>文档形式</th><th>难点</th><th>解决方案</th></tr></thead><tbody><tr><td>PDF</td><td>一个典型的 PDF 可能包含多层嵌套表格、分栏排版、页眉页脚、内嵌图片、扫描版文字等。PDF 的底层通常更接近页面上的文字片段及其坐标，而不是具有完整语义结构的段落。通用解析工具可能导致表格被打散、分栏内容交错、阅读顺序错乱、页眉页脚混入正文；双栏论文中的正文和脚注也可能被错误拼接。</td><td>布局识别： 根据文本坐标、字体和页面布局恢复阅读顺序，区分标题、正文、表格、图片、页眉页脚等区域。表格提取： 使用 Camelot、pdfplumber 等工具提取表格；复杂表格可使用布局分析或专门的表格识别模型，并尽量保留行列关系。扫描页处理： 对图像型页面执行 OCR，并进行纠错。结构归一化： 转换为 Markdown、HTML 或统一的文档中间表示，同时保留页码、标题层级和元素类型。</td></tr><tr><td>Word（DOCX）</td><td>DOCX 本身包含段落、标题样式、表格、列表、超链接、图片、脚注、批注等结构，但简单地提取纯文本会丢失这些信息。表格中的行列关系可能消失，编号列表可能失去层级，跨页表格可能被拆开；图片中的文字、图表说明和正文之间的关联也可能丢失。</td><td>结构化提取： 使用 python-docx、Mammoth 等工具读取段落、标题、列表和表格，避免只提取纯文本。保留层级： 根据标题样式、编号和缩进恢复章节结构与列表层级。表格处理： 将表格转换为 Markdown/HTML，并保留表头、合并单元格等重要关系；复杂表格必要时单独解析。多模态元素处理： 提取图片、图表和相关说明，必要时使用 OCR 或视觉模型识别内容。统一表示： 输出带有章节路径、元素类型等元数据的中间格式。</td></tr><tr><td>PPT（PPTX）</td><td>PPT 的信息通常依赖空间布局，而非连续文本。标题、正文、文本框、图片、图表、箭头和连线之间可能存在语义关联。直接提取文本容易打乱阅读顺序，丢失图表中的数据、流程图的连接关系，以及跨页幻灯片之间的上下文。演讲者备注也可能包含正文没有的信息。</td><td>按幻灯片解析： 使用 python-pptx 等工具提取每页标题、文本框、表格、图表及备注，并保留幻灯片编号。布局恢复： 根据文本框坐标、层级和空间位置判断阅读顺序及内容分组。图表处理： 优先提取底层数据；无法直接提取时使用 OCR 或视觉模型解析。关系保留： 对流程图、架构图等保留节点与连线关系，必要时转换为结构化描述。上下文关联： 保留幻灯片标题、页码及相邻页面信息，避免单页内容脱离演示主题。</td></tr><tr><td>Excel（XLSX）</td><td>Excel 的语义不仅存在于单元格文本中，还存在于行列位置、表头层级、公式、数值格式、合并单元格、工作表名称和单元格之间的关系中。直接按行转为文本可能丢失表头与数值的对应关系；多个工作表之间可能存在关联；公式单元格还涉及公式本身与计算结果的区别。大型工作簿也可能包含大量无关空白区域。</td><td>按工作表解析： 使用 openpyxl、pandas 等工具读取各工作表，并保留工作表名称、行列坐标和表头。恢复表结构： 识别多级表头、合并单元格、单位、注释及数据区域，将数据转换为结构化表格或带字段名的记录。公式处理： 根据需求同时保留公式与缓存计算值；注意公式结果可能因缓存缺失而无法读取。语义增强： 将表格标题、时间范围、单位、字段定义和来源作为元数据。检索优化： 小型表格可转换为 Markdown；大型表格更适合保留为结构化数据，按行、实体或业务主题建立索引，避免机械地按固定字符数切块。</td></tr><tr><td>图片（PNG、JPG 等）</td><td>图片本身不一定包含可直接提取的文本。信息可能以截图、信息图、图表、流程图、架构图或照片的形式存在。OCR 可以识别部分文字，但难以独立理解图形关系、图表趋势、箭头指向和文本与视觉元素之间的对应关系。低分辨率、倾斜、复杂背景和小字号还会降低识别准确率。</td><td>先判断内容类型： 区分纯文本截图、表格、图表、流程图、自然图像等。OCR： 使用 PaddleOCR、Tesseract 等提取文字，并进行去噪、旋转校正和识别结果纠错。视觉理解： 对图表、流程图、架构图等使用视觉语言模型（VLM）生成结构化描述，必要时提取图例、坐标轴、节点及连接关系。关联上下文： 保留原图、图片标题、图注、所属章节及来源文档。索引设计： 可同时保存 OCR 文本、图像描述和原图引用，支持文本检索与多模态检索。</td></tr><tr><td>HTML、Markdown</td><td>HTML 可能包含导航栏、广告、页脚、脚本、隐藏元素等噪声；直接提取全部文本会将无关内容混入正文。Markdown 虽然具有标题、列表、代码块和表格等结构，但代码块、嵌套列表、链接及表格的边界如果处理不当，也会丢失语义。网页中的正文、图片、表格和链接还可能存在引用关系。</td><td>正文抽取： HTML 使用 BeautifulSoup、trafilatura、Readability 等方法提取正文，去除导航栏、广告和其他模板噪声；必要时先执行 JavaScript 渲染。保留结构： 提取标题层级、段落、列表、表格、链接、代码块及图片说明。Markdown 解析： 使用 Markdown AST 或结构化解析器识别不同元素，避免把代码块和表格简单当作普通文本。链接与元数据： 保留标题、URL、来源、发布时间等可用信息，并关联正文引用的图片或附件。</td></tr><tr><td>扫描件（扫描版 PDF、纸质文档扫描图）</td><td>扫描件本质上是页面图像，而非可直接提取的数字文本。除了 OCR 识别错误，还可能出现倾斜、模糊、印章遮挡、手写内容、多栏排版、表格线干扰等问题。即使单个字符识别正确，阅读顺序、表格结构、段落边界和页间内容也可能恢复错误。扫描版 PDF 还可能混合具有文本层的页面与纯图像页面。</td><td>预处理： 进行图像去噪、倾斜校正、方向检测、对比度增强及分辨率优化。OCR 与布局识别： 使用 PaddleOCR、云端文档解析服务或支持布局分析的 OCR 模型，识别文本区域、阅读顺序、表格和标题。后处理纠错： 利用词典、领域术语、格式规则及上下文检查纠正识别错误；对关键数字、日期、编号等重点校验。表格与复杂版面： 使用专门的表格结构识别或文档视觉模型。质量控制： 对低置信度结果进行抽样复核或人工校正，并保留页码、区域坐标及原图引用。</td></tr></tbody></table></div>
+<h2 id="3-cleaning">3. Cleaning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-cleaning" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>规则过滤：用正则匹配常见的噪声模式（页码、版权声明、导航链接），直接过滤</p>
+<p>去重：对文档做去重（SimHash、MinHash），避免重复内容占据检索空间</p>
+<p>质量打分：对每个文档块做质量打分（长度、完整性、可读性），低分的不入库</p>
+<h3 id="实践代码示例">实践代码示例<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#实践代码示例" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>import pymupdf  # Fitz for PDF
+from docx import Document
+import html2text
+import re
+
+class DocumentParser:
+    def __init__(self):
+        self.clean_patterns = [
+            r'\s{3,}',  # 多余空格
+            r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]',  # 控制字符
+            r'^第[一二三四五六七八九十\d]+\s*[章节条].*$',  # 冗余标题
+        ]
+
+    def parse_pdf(self, file_path: str) -> str:
+        &quot;&quot;&quot;解析PDF，保留章节结构&quot;&quot;&quot;
+        doc = pymupdf.open(file_path)
+        text = &quot;&quot;
+        for page in doc:
+            # 提取带结构的文本
+            blocks = page.get_text(&quot;dict&quot;)[&quot;blocks&quot;]
+            for b in blocks:
+                if b['type'] == 0:  # 文本块
+                    for line in b[&quot;lines&quot;]:
+                        for span in line[&quot;spans&quot;]:
+                            text += span[&quot;text&quot;] + &quot; &quot;
+                    text += &quot;\n&quot;
+        return self._clean_text(text)
+
+    def _clean_text(self, raw_text: str) -> str:
+        &quot;&quot;&quot;应用清洗规则&quot;&quot;&quot;
+        cleaned = raw_text
+        for pattern in self.clean_patterns:
+            cleaned = re.sub(pattern, ' ', cleaned, flags=re.MULTILINE)
+        # 合并换行，保留段落分隔
+        cleaned = re.sub(r'\n\s*\n+', '\n\n', cleaned)
+        return cleaned.strip()
+
+# 使用示例
+parser = DocumentParser()
+content = parser.parse_pdf(&quot;企业年报.pdf&quot;)
+print(f&quot;解析并清洗后字符数: {len(content)}&quot;)
+                    
+</code></pre>
+<h2 id="4-chunking">4. Chunking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-chunking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../../chunking" class="internal internal-link" data-slug="chunking">Chunking</a></p>
+<h2 id="5-metadata">5. Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-metadata" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>为每个文本块附加结构化元数据，增强检索的精准度和可解释性。</p>
+<h3 id="元数据分类">元数据分类<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#元数据分类" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="文档级元数据">文档级元数据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#文档级元数据" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>文档ID、文件名、来源系统</li>
+<li>作者、创建/修改时间</li>
+<li>文档类型、总页数、语言</li>
+<li>安全等级、业务部门</li>
+</ul>
+<h4 id="块级元数据">块级元数据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#块级元数据" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>块ID、在文档中的顺序</li>
+<li>起始/结束页码、行号</li>
+<li>所属章节标题、段落类型</li>
+<li>实体信息（人名、组织、关键词）</li>
+</ul>
+<h4 id="系统级元数据">系统级元数据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#系统级元数据" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>处理流水线版本、时间戳</li>
+<li>嵌入模型版本、分块参数</li>
+<li>校验和、质量评分</li>
+</ul>
+<h3 id="存储设计向量数据库记录结构">存储设计（向量数据库记录结构）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#存储设计向量数据库记录结构" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>{
+  &quot;id&quot;: &quot;doc_2024_q1_report_chunk_015&quot;,
+  &quot;text&quot;: &quot;本季度营收同比增长25%，主要得益于亚洲市场扩张...&quot;,
+  &quot;embedding&quot;: [0.123, -0.456, ..., 0.789],  // 768维向量
+  &quot;metadata&quot;: {
+    &quot;document&quot;: {
+      &quot;doc_id&quot;: &quot;2024_Q1_FIN_REPORT&quot;,
+      &quot;file_name&quot;: &quot;2024_Q1_Financial_Report.pdf&quot;,
+      &quot;source&quot;: &quot;SharePoint/Finance&quot;,
+      &quot;author&quot;: &quot;财务部&quot;,
+      &quot;created_date&quot;: &quot;2024-04-10&quot;,
+      &quot;doc_type&quot;: &quot;financial_report&quot;,
+      &quot;security_level&quot;: &quot;internal&quot;
+    },
+    &quot;chunk&quot;: {
+      &quot;chunk_index&quot;: 15,
+      &quot;start_page&quot;: 8,
+      &quot;end_page&quot;: 8,
+      &quot;section_title&quot;: &quot;财务表现分析&quot;,
+      &quot;prev_chunk_id&quot;: &quot;doc_2024_q1_report_chunk_014&quot;,
+      &quot;next_chunk_id&quot;: &quot;doc_2024_q1_report_chunk_016&quot;,
+      &quot;entities&quot;: [&quot;营收&quot;, &quot;亚洲市场&quot;, &quot;同比增长&quot;],
+      &quot;word_count&quot;: 45
+    },
+    &quot;system&quot;: {
+      &quot;pipeline_version&quot;: &quot;v2.1.0&quot;,
+      &quot;processed_at&quot;: &quot;2024-05-15T14:30:00Z&quot;,
+      &quot;embedding_model&quot;: &quot;text-embedding-3-large&quot;,
+      &quot;chunk_strategy&quot;: &quot;recursive_semantic_v1&quot;
+    }
+  }
+}             
+</code></pre>
+<p>**最佳实践：**元数据应作为向量检索时的过滤器（filter），实现基于部门、时间、类型的精准检索。同时，建议将原始文本与向量分开存储，以优化成本与性能。</p>
+<h2 id="6-增量更新">6. 增量更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-增量更新" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>增量更新要解决三个问题：哪些文档变了？变了的部分怎么更新？旧的版本怎么处理？</p>
+<p>哪些变了：用文档的元数据（更新时间、版本号）做变更检测，或者对文档内容做哈希比对</p>
+<p>变了怎么更新：不能全量重建（太慢），要做增量更新——只重新处理变更的部分，替换向量库 中对应的向量</p>
+<p>旧版本怎么处理：有些场景需要保留历史版本（如合同变更追溯），有些可以直接覆盖</p></div></article><div class="page-listing"><p>0 items under this folder.</p><div><ul class="section-ul"></ul></div></div></div><hr/><div class="page-footer"></div></div><div class="right sidebar"></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript-3426b91c.js" type="module" data-persist="true"></script></html>

@@ -1,100 +1,148 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent/</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent/tooluse/skill/openclawskill/llmeval_skill/skill</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent/tooluse/skill/</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/references</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_1</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_2</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_3</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_4</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_5</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/type_6</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/transformer/annotated_transformer</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/transformer/attention_is_all_you_need</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/alignment/dpo</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/alignment/grpo</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/alignment/ppo</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/lora/</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/lora/qlora</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/comparison</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/evaluation/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/evaluation/llmasjudge</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/evaluation/trade-off</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/observability</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/offline/chunking/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/offline/documentprocessing/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/offline/embedding/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/generation/abstention</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/generation/citation</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/generation/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/queryprocessing/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/rerank/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/retrieval/</loc>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/readme</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/</loc>
-    <lastmod>2026-10-19T08:13:02.000Z</lastmod>
+    <lastmod>2026-10-22T01:12:49.000Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent/tooluse/skill/openclawskill/llmeval_skill/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent/tooluse/skill/openclawskill/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/agent/tooluse/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/ai_java/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/backend/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/transformer/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/architecture/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/alignment/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/posttraining/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/llm/training/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/offline/</loc>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
+  </url><url>
+    <loc>https://yangmiaowei.github.io/llm-atlas-site/rag/online/</loc>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url><url>
     <loc>https://yangmiaowei.github.io/llm-atlas-site/tags/</loc>
-    <lastmod>2026-10-19T08:13:41.272Z</lastmod>
+    <lastmod>2026-10-22T01:13:42.035Z</lastmod>
   </url></urlset>
